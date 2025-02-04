@@ -1,0 +1,166 @@
+/* Define global variables for colors */
+:root {
+    --primary-green: #01B636;
+    --secondary-green: #3BD16F;
+    --light-green: #74E39A;
+    --light-gray: #E3E3E3;
+    --dark-gray: #989898;
+    --text-color: #333;
+    --background-color: #F9F9F9;
+    --highlight-color: #FFB84D;  /* Added highlight color */
+
+    /* Font size variables */
+    --font-size-h1: 40px;
+    --font-size-h2: 2em;
+    --font-size-h3: 1.75em;
+    --font-size-h4: 1.5em;
+    --font-size-h5: 1.25em;
+    --font-size-h6: 1.1em;
+    --font-size-p: 1em;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;  /* Improve readability */
+    font-size: 16px;
+    text-align: center;  /* Center align text by default */
+}
+
+main {
+    /*max-width: 1200px;  !* Set a maximum width for content *!*/
+    margin: 20px 10px;  /* Set 20px top/bottom margin and reduce left/right margin to 10px */
+    padding: 10px 10px;  /* Adjust padding to reduce space inside (vertical and horizontal) */
+    background-color: var(--background-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Soft shadow effect */
+}
+
+
+h1 {
+    font-size: var(--font-size-h1);
+    color: var(--primary-green);
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+
+p {
+    font-size: 1.1em;
+    color: var(--text-color);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+a {
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--secondary-green);
+}
+
+/* Add a subtle transition effect to buttons and links */
+a, button {
+    transition: all 0.3s ease-in-out;
+}
+
+button {
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-green);
+    transform: scale(1.05);  /* Slight scale effect */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: var(--primary-green);
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Shadow for depth */
+    display: flex;
+    justify-content: space-between;  /* Distribute space between logo and nav links */
+    align-items: center;  /* Align items vertically */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;  /* Center navigation items */
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;  /* Align navigation links to the right */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+.nav-links li a:hover {
+    background-color: var(--light-green);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;  /* Align logo and site name vertically */
+    gap: 10px;  /* Space between logo and text */
+}
+
+.logo {
+    height: 40px;  /* Adjust logo size */
+    width: auto;
+}
+
+.site-name {
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;  /* Capitalize the name */
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-gray);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+    position: relative;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);  /* Subtle shadow at the top */
+}
+
+footer p {
+    margin: 0;
+}
