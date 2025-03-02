@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="volunteer.css">
+</head>
+<body>
+
+<header>
+    <h1>🌍 Climate Action Volunteering</h1>
+</header>
+
+<section class="banner-section">
+    <h2 class="visually-hidden">Banner</h2>
+    <div class="banner-overlay">
+        <div class="banner-heading">Join Hands for a Greener Future</div>
+        <div class="banner-heading">Act Now for Climate Action!</div>
+        <div class="banner-text-intro"> "Climate change is one of the greatest challenges of our time, and every action counts.
+            Be a part of the movement towards a sustainable planet by volunteering for climate
+            initiatives, community clean-ups, reforestation projects, and awareness campaigns.
+            Together, we can protect our environment, reduce carbon footprints, and create a healthier
+            future for generations to come. Join us in making a real difference today!"
+        </div>
+    </div>
+</section>
+
+<section class="cards">
+    <div class="card">
+        <div class="icon">
+            <img src="images/volunteer-icon.png" alt="Volunteer">
+        </div>
+        <h3>Become a Volunteer</h3>
+        <p>Join hands with us and make a real impact by dedicating your time, energy, and skills to a meaningful cause.</p>
+        <div class="button-container">
+            <button class="join-now-btn">JOIN NOW</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="icon">
+            <img src="images/fundraising-icon.png" alt="Fundraising">
+        </div>
+        <h3>Quick Fundraising</h3>
+        <p>Support urgent causes by organizing or contributing to fundraising campaigns that bring immediate relief and hope.</p>
+        <div class="button-container">
+            <button class="check-now">CHECK NOW</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="icon">
+            <img src="images/donation-icon.png" alt="Donation">
+        </div>
+        <h3>Make a Donation</h3>
+        <p>Every contribution helps drive sustainable change, supports reforestation efforts, and provides essential resources to those in need.</p>
+        <div class="button-container">
+            <button class="donate-now">DONATE NOW</button>
+        </div>
+    </div>
+</section>
+
+<!--Table Section-->
+<section class="table-section">
+    <h2>Upcoming Programs</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Event</th>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Slots Available</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Coastal & River Cleanup Campaign</td>
+            <td>March 5, 2025</td>
+            <td>Miami Beach</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>Carbon Footprint Reduction Challenge</td>
+            <td>March 10, 2025</td>
+            <td>Community Center</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Sustainable Urban Gardening Initiative</td>
+            <td>March 15, 2025</td>
+            <td>City Park</td>
+            <td>15</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<!-- Volunteer Programs -->
+<section class="volunteer-section">
+    <h2>Volunteer Programs</h2>
+    <select id="program-filter">
+        <option value="all">All Programs</option>
+        <option value="popular">Most Popular</option>
+        <option value="new">Newest</option>
+        <option value="highRated">Highest Rated</option>
+    </select>
+    <div class="programs-container">
+        <div class="program-card" data-category="popular">
+            <img src="images/treePlantation.jpg" alt="Tree Plantation">
+            <h2>Reforestation & Tree Plantation Drive</h2>
+            <p>Restore forests and green spaces to absorb carbon dioxide and improve biodiversity.</p>
+            <h3>How You Can Contribute:</h3>
+            <ul class="contribute-list">
+                <li>Join a local tree-planting initiative or start one in your community.</li>
+                <li>Donate to organizations that support large-scale reforestation.</li>
+                <li>Raise awareness about deforestation and its impact.</li>
+            </ul>
+            <div class="button-container">
+                <button class="join-btn">Join Now</button>
+            </div>
+        </div>
+        <div class="program-card" data-category="new">
+            <img src="images/beachCleanup.jpg" alt="Beach Cleanup">
+            <h2>Coastal & River Cleanup Campaign</h2>
+            <p>Reduce plastic pollution in oceans, rivers, and lakes to protect marine life and eco-system</p>
+            <h3>How You Can Contribute:</h3>
+            <ul class="contribute-list">
+                <li>Participate in beach and river cleanup events.</li>
+                <li>Reduce personal plastic waste by using reusable products.</li>
+                <li>Advocate for stronger waste management policies in your area.</li>
+            </ul>
+            <div class="button-container">
+                <button class="join-btn">Join Now</button>
+            </div>
+        </div>
+        <div class="program-card" data-category="highRated">
+            <img src="images/renewableEnergyProgram.jpg" alt="Volunteers join hand together as teamwork and unity">
+            <h2>Renewable Energy Awareness Program</h2>
+            <p>Promote the use of renewable energy sources to reduce dependency on fossil fuels.</p>
+            <h3>How You Can Contribute:</h3>
+            <ul class="contribute-list">
+                <li>Educate communities about solar, wind, and hydro energy.</li>
+                <li>Help install solar panels in schools or community centers.</li>
+                <li>Support policies and initiatives that encourage clean energy adoption.</li>
+            </ul>
+            <div class="button-container">
+                <button class="join-btn">Join Now</button>
+            </div>
+        </div>
+        <div class="program-card" data-category="popular">
+            <img src="images/climateChangeEducation.jpg" alt="Students are using templates and materials to make a report on environmental protection">
+            <h2>Climate Change Education & Advocacy</h2>
+            <p>Spread awareness and educate people about climate change and its solutions.</p>
+            <h3>How You Can Contribute:</h3>
+            <ul class="contribute-list">
+                <li>Organize or participate in educational workshops on climate action.</li>
+                <li>Share reliable information through social media and blogs.</li>
+                <li>Collaborate with schools to introduce climate-focused programs.</li>
+            </ul>
+            <div class="button-container">
+                <button class="join-btn">Join Now</button>
+            </div>
+        </div>
+        <div class="program-card" data-category="new">
+            <img src="images/carbonFootPrint.jpg" alt="Colleagues working together at environment project">
+            <h2>Carbon Footprint Reduction Challenge</h2>
+            <p>Encourage individuals and businesses to adopt eco-friendly habits, reduce carbon emissions, minimize waste, and promote sustainable lifestyles.</p>
+            <h3>How You Can Contribute:</h3>
+            <ul class="contribute-list">
+                <li>Participate in challenges like reducing meat consumption or carpooling.</li>
+                <li>Encourage workplaces to adopt energy-efficient practices.</li>
+                <li>Use carbon footprint calculators and promote sustainable lifestyle changes.</li>
+            </ul>
+            <div class="button-container">
+                <button class="join-btn">Join Now</button>
+            </div>
+        </div>
+        <div class="program-card" data-category="highRated">
+            <img src="images/disasterRelief.jpg" alt="Volunteers accept clothing donations for needy people and families in their local community">
+            <h2>Disaster Preparedness & Relief for Climate-Affected Areas</h2>
+            <p>Provide immediate support and long-term solutions to communities affected by climate disasters and enhance recovery efforts.</p>
+            <h3>How You Can Contribute:</h3>
+            <ul class="contribute-list">
+                <li>Volunteer with disaster relief organizations.</li>
+                <li>Help distribute emergency supplies to affected areas.</li>
+                <li>Assist in rebuilding homes and infrastructure.</li>
+            </ul>
+            <div class="button-container">
+                <button class="join-btn">Join Now</button>
+            </div>
+        </div>
+        <div class="program-card" data-category="highRated">
+            <img src="images/sustainableTransport.jpg" alt="Group of cyclists">
+            <h2>Sustainable Transportation Promotion</h2>
+            <p>Reduce carbon emissions by promoting eco-friendly transport options.</p>
+            <h3>How You Can Contribute:</h3>
+            <ul class="contribute-list">
+                <li>Use bicycles, public transportation, or electric vehicles.</li>
+                <li>Advocate for better public transport systems in your area.</li>
+                <li>Organize car-free events and awareness campaigns.</li>
+            </ul>
+            <div class="button-container">
+                <button class="join-btn">Join Now</button>
+            </div>
+        </div>
+        <div class="program-card" data-category="popular">
+            <img src="images/ecoFriendlyProducts.jpg" alt="Volunteers packing eco friendly products">
+            <h2>Eco-Friendly Product Development & Promotion</h2>
+            <p>Reduce environmental harm by promoting sustainable alternatives to plastic and harmful materials.</p>
+            <h3>How You Can Contribute:</h3>
+            <ul class="contribute-list">
+                <li>Support businesses that sell eco-friendly products.</li>
+                <li>Encourage the use of biodegradable materials in your community.</li>
+                <li>Develop or promote sustainable product alternatives.</li>
+            </ul>
+            <div class="button-container">
+                <button class="join-btn">Join Now</button>
+            </div>
+        </div>
+        <div class="program-card" data-category="new">
+            <img src="images/sustainableGardning.jpg" alt="Hands on session about sustainable urban gardening">
+            <h2>Sustainable Urban Gardening Initiative</h2>
+            <p>Increase green spaces in urban areas to improve air quality, air qualoty, urban resilience against climate change, and promote community well-being through eco-friendly practices.</p>
+            <h3>How You Can Contribute:</h3>
+            <ul class="contribute-list">
+                <li>Start or volunteer at a community garden.</li>
+                <li>Teach others about composting and organic farming.</li>
+                <li>Advocate for urban farming policies in your city.</li>
+            </ul>
+            <div class="button-container">
+                <button class="join-btn">Join Now</button>
+            </div>
+        </div>
+        <div class="program-card" data-category="highRated">
+            <img src="images/garbageManagement.jpg" alt="Recycling team member standing in park">
+            <h2>Sustainable Waste Management & Recycling Drive </h2>
+            <p>Waste mismanagement is a major environmental issue, with landfills overflowing and plastics polluting the oceans.</p>
+            <h3>How You Can Contribute:</h3>
+            <ul class="contribute-list">
+                <li>Join or organize local recycling programs.</li>
+                <li>Educate people on proper waste segregation.</li>
+                <li>Work with businesses to adopt zero-waste initiatives.</li>
+            </ul>
+            <div class="button-container">
+                <button class="join-btn">Join Now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats banner Section -->
+<section class="stats-banner-section">
+    <!-- Stats Section on the Left -->
+    <div class="stats-grid">
+        <div class="stats-group">
+            <div class="stats-item">
+                <div class="stats-icon">
+                    <img src="images/trees.png" alt="Tree Icon">
+                </div>
+                <h3>1500+</h3>
+                <p>Trees Planted</p>
+            </div>
+            <div class="stats-item">
+                <div class="stats-icon">
+                    <img src="images/heart.png" alt="Heart Icon">
+                </div>
+                <h3>2,450+</h3>
+                <p>Total Volunteers</p>
+            </div>
+            <div class="stats-item">
+                <div class="stats-icon">
+                    <img src="images/campaign.png" alt="Campaign Icon">
+                </div>
+                <h3>150+</h3>
+                <p>Campaigns Running</p>
+            </div>
+        </div>
+        <div class="stats-group">
+            <div class="stats-item">
+                <div class="stats-icon">
+                    <img src="images/countries.png" alt="Globe Icon">
+                </div>
+                <h3>200+</h3>
+                <p>Countries</p>
+            </div>
+            <div class="stats-item">
+                <div class="stats-icon">
+                    <img src="images/award.png" alt="Trophy Icon">
+                </div>
+                <h3>25</h3>
+                <p>Awards Won</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Review and Rating section-->
+<div class="reviews-wrapper">
+    <!-- Overall Rating Section (1/3) -->
+    <section class="rating-section">
+        <div class="rating-box">
+            <h3>Overall Rating</h3>
+            <span class="rating-score">9.4<span class="rating-out-of">/10</span></span>
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+            <p class="rating-subtitle">Exceptional - Based on 250 reviews</p>
+        </div>
+
+        <div class="rating-bars">
+            <div class="rating-bar">
+                <span>Excellent</span>
+                <div class="bar">
+                    <div class="filled excellent"></div>
+                </div>
+            </div>
+            <div class="rating-bar">
+                <span>Good</span>
+                <div class="bar">
+                    <div class="filled good"></div>
+                </div>
+            </div>
+            <div class="rating-bar">
+                <span>Average</span>
+                <div class="bar">
+                    <div class="filled average"></div>
+                </div>
+            </div>
+            <div class="rating-bar">
+                <span>Below Average</span>
+                <div class="bar">
+                    <div class="filled below-average"></div>
+                </div>
+            </div>
+            <div class="rating-bar">
+                <span>Poor</span>
+                <div class="bar">
+                    <div class="filled poor"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section (2/3) -->
+    <section class="reviews-section">
+        <h2>Recent Reviews</h2>
+        <div class="reviews-container">
+            <div class="reviews-slider">
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <h3>Excellent Experience</h3>
+                    </div>
+                    <p>
+                        Volunteering for the beach cleanup was amazing. I met great people and made a difference!
+                        <span class="more-text"> It was inspiring to see so many volunteers working together to make a real impact. I would definitely do it again!</span>
+                        <a href="#" class="toggle-text" onclick="toggleReview(event, this)">See More</a>
+                    </p>
+                    <small class="reviewer">- Alex, Jan 2025</small>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="stars">⭐⭐⭐⭐</span>
+                        <h3>Great Community Effort</h3>
+                    </div>
+                    <p>
+                        I enjoyed every moment of planting trees in the park.
+                        <span class="more-text" style="display: none;"> It felt rewarding to know that we are contributing to a greener future. The organizers were helpful, and I met some incredible like-minded people.</span>
+                        <a href="#" class="toggle-text" onclick="toggleReview(event, this)">See More</a>
+                    </p>
+                    <small class="reviewer">- Maria, Feb 2025</small>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                        <h3>Life-Changing Experience</h3>
+                    </div>
+                    <p>
+                        Teaching kids in the community center was a humbling experience.
+                        <span class="more-text"> Seeing their enthusiasm to learn made every effort worthwhile. I highly recommend this program to anyone who wants to make a difference.</span>
+                        <a href="#" class="toggle-text" onclick="toggleReview(event, this)">See More</a>
+                    </p>
+                    <small class="reviewer">- James, Mar 2025</small>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section class="feedback-section">
+    <div class="feedback-container">
+        <!-- Right Side: Feedback Form -->
+        <div class="feedback-form">
+            <h2>We Value Your Feedback!</h2>
+            <p>Your feedback helps us improve. Please share your thoughts!</p>
+
+            <form id="feedback-form">
+                <!-- Star Ratings Above Textarea -->
+                <div class="rating-options">
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                </div>
+
+                <textarea placeholder="Write your review here..."></textarea>
+
+                <div class="button-container">
+                    <button type="submit" class="btn primary-btn">Submit Feedback</button>
+                    <button type="reset" class="btn secondary-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Volunteer Sign-Up Modal -->
+<div id="signup-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Sign Up for Volunteering</h2>
+        <form id="volunteer-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <div class="button-container">
+                <button type="button" class="btn secondary-btn">Cancel</button>
+                <button type="submit" class="btn primary-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p><a href="pageEditor_ST1.html#volunteer">Volunteer Page - Page Editor.</a></p>
+</footer>
+
+<script src="volunteer.js"></script>
+</body>
+</html>

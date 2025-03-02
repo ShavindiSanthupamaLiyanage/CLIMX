@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - 01</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="../styles/pageEditor_validator.css"> <!-- External CSS link -->
+
+</head>
+<body>
+
+<!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+<header id="top">
+    <h1>Replace the header with your teams' website header</h1>
+</header>
+
+<section class="stud">
+    <h2>Shavindi Santhupama Liyanage - Student 01</h2>
+</section>
+
+<div class="container">
+    <!-- Main content area -->
+    <main>
+
+        <!-- Update those first three sections for the pages you were responsible to implement -->
+        <section>
+            <h2 id="splash">Splash Page</h2>
+            <p>The splash screen serves as the introductory page for the website, featuring a brief animation and an automatic redirect to the content page after 4 seconds.</p>
+            <h3>Technical Description</h3>
+                <h4>HTML Techniques Used</h4>
+                <ul>
+                    <li><strong>Automatic Redirection:</strong> The page uses <code>&lt;meta http-equiv="refresh" content="4;url=../Content/content1.html"&gt;</code> to redirect users after 4 seconds.</li>
+                    <li><strong>Layout Structure:</strong> The main container <code>&lt;div class="splash-container"&gt;</code> ensures structured content alignment.</li>
+                    <li><strong>Branding Elements:</strong> Displays the CLIMX logo using <code>&lt;img src="images/logo.png"&gt;</code> and a large title <code>&lt;h1 class="title"&gt;</code>.</li>
+                    <li><strong>Mission Statement:</strong> Text is presented in <code>&lt;p class="mission"&gt;</code> for clarity and separation.</li>
+                    <li><strong>Team Members:</strong> Structured list created with <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> elements.</li>
+                    <li><strong>Loading Animation:</strong> The <code>&lt;div class="loader"&gt;</code> contains an animated loading effect using CSS keyframes.</li>
+                </ul>
+
+                <h4>CSS Techniques Used</h4>
+                <ul>
+                    <li><strong>Background Styling:</strong> The splash screen applies a full-screen background using <code>background: url('images/splash.png') no-repeat center center;</code> with <code>background-size: cover;</code> for proportional scaling.</li>
+                    <li><strong>Overlay Effect:</strong> A semi-transparent overlay is added using <code>body::before &#123; background: rgba(0, 0, 0, 0.5); }</code> to enhance text readability.</li>
+                    <li><strong>Loader Animation:</strong> The blinking dots animation is achieved through <code>@keyframes blink</code> and applied with <code>animation: blink 1.5s infinite;</code>.</li>
+                </ul>
+
+                <h3>Accessibility</h3>
+                <p>The splash screen follows accessibility best practices:</p>
+                <ul>
+                    <li><strong>Text Readability:</strong> The overlay effect ensures sufficient contrast between text and background.</li>
+                    <li><strong>Alternative Text:</strong> The CLIMX logo includes <code>alt="CLIMX Logo"</code> for screen readers.</li>
+                    <li><strong>Keyboard Navigation:</strong> No unnecessary auto-focus elements, ensuring smooth navigation.</li>
+                    <li><strong>Time Consideration:</strong> A 4-second delay provides enough time for users to recognize the content before redirection.</li>
+                </ul>
+            <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+            <p><a href="validation_ST1.html#splashVal">Link to the validation page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+            <h3>Link to the page</h3>
+            <p><a href="splash.html">Link to the splash screen</a></p>
+        </section>
+
+        <section>
+            <h2 id="volunteer">Volunteer Page</h2>
+            <p>The volunteer page showcases various climate action programs and allows users to sign up for opportunities.</p>
+            <h3>Technical Description</h3>
+            <h4>HTML Techniques Used</h4>
+            <ul>
+                <li><strong>Header:</strong> Displays the page title "Climate Action Volunteering" using <code>&lt;h1&gt;</code>.</li>
+                <li><strong>Banner Section:</strong> Uses <code>&lt;div class="banner-overlay"&gt;</code> for an overlay effect, with introductory text.</li>
+                <li><strong>Cards Section:</strong> Displays three program cards with an icon, title, description, and sign-up button.</li>
+                <li><strong>Table Section:</strong> Lists upcoming programs using a <code>&lt;table&gt;</code> for structured display.</li>
+                <li><strong>Volunteer Programs Section:</strong> Contains a dropdown filter (<code>&lt;select&gt;</code>) and program cards.</li>
+                <li><strong>Stats Banner:</strong> Uses <code>.stats-item</code> components to highlight volunteering impact.</li>
+                <li><strong>Review & Rating:</strong> Features a review panel with dynamic review cards.</li>
+                <li><strong>Feedback Form:</strong> Allows users to submit reviews with a <code>&lt;textarea&gt;</code> and star ratings.</li>
+                <li><strong>Sign-Up Modal:</strong> Provides an interactive form for volunteer registrations.</li>
+            </ul>
+
+            <h4>CSS Techniques</h4>
+            <ul>
+                <li><strong>Layout & Positioning:</strong> Uses <code>display: flex;</code> and <code>justify-content: center;</code> for alignment.</li>
+                <li><strong>Typography & Styling:</strong> Applies <code>text-transform: uppercase;</code> for banners and <code>box-shadow</code> for modern card design.</li>
+                <li><strong>Responsive Design:</strong> Uses media queries and <code>flex-wrap: wrap;</code> for mobile adaptability.</li>
+            </ul>
+
+            <h4>JavaScript Functionality</h4>
+            <ul>
+                <li><strong>Program Filtering:</strong> Uses an event listener to filter programs dynamically.</li>
+                <li><strong>Modal Handling:</strong> Controls opening and closing of the sign-up modal.</li>
+                <li><strong>Review Toggle:</strong> Expands and collapses review sections dynamically.</li>
+            </ul>
+
+            <h3>Accessibility</h3>
+            <p>Ensuring accessibility on the volunteer page:</p>
+            <ul>
+                <li><strong>Alt Text:</strong> All images include descriptive <code>alt</code> attributes.</li>
+                <li><strong>Keyboard Navigation:</strong> Interactive elements are focusable.</li>
+                <li><strong>Form Labels:</strong> Input fields include <code>&lt;label&gt;</code> elements for clarity.</li>
+            </ul>
+
+            <h3>Link to the Validation Page</h3>
+            <p><a href="validation_ST1.html#volunteerVal">Link to the validation page</a>.</p>
+
+            <h3>Link to the Page</h3>
+            <p><a href="volunteer.html">Link to the volunteer page.</a></p>
+        </section>
+
+        <section>
+            <h2 id="content">Content Page</h2>
+            <p>The Content Page provides an overview of international climate agreements, policies, and events, including key treaties like the Kyoto Protocol, Paris Agreement, and Montreal Protocol. It highlights major UN Climate Conferences (COPs) and global climate events, offering structured information with interactive details and smooth navigation.</p>
+            <h3>Technical Description</h3>
+            <h4>HTML Techniques Used</h4>
+            <ul>
+                <li><strong>Semantic HTML Elements:</strong> Used <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;article&gt;</code> for better document structure and accessibility.</li>
+                <li><strong>Fixed Navigation Bar:</strong> Implemented internal links using <code>&lt;a href="#id"&gt;</code> for smooth section navigation.</li>
+                <li><strong>Structured Headings:</strong> Used <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code> to maintain readability and SEO.</li>
+                <li><strong>Embedded Images:</strong> Used <code>&lt;img&gt;</code> with <code>alt</code> attributes for accessibility and proper scaling within sections.</li>
+                <li><strong>Flexible Content Containers:</strong> Applied <code>&lt;div&gt;</code> elements to group text, images, and interactive components.</li>
+                <li><strong>Read-More Functionality:</strong> Added hidden <code>&lt;div class="details-box"&gt;</code> sections that expand on click.</li>
+                <li><strong>Navigation Menu:</strong> Used <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> inside <code>&lt;nav&gt;</code> for an accessible and structured navigation menu.</li>
+                <li><strong>Responsive Layout:</strong> Ensured responsive layout using nested <code>&lt;div&gt;</code> elements and class-based styling.</li>
+                <li><strong>Text Emphasis:</strong> Applied <code>&lt;strong&gt;</code> and <code>&lt;span&gt;</code> to highlight key information.</li>
+                <li><strong>Content Flow:</strong> Maintained content flow and readability by structuring text within <code>&lt;p&gt;</code> tags instead of using excessive line breaks.</li>
+            </ul>
+
+            <h4>CSS Techniques Used</h4>
+            <ul>
+                <li><strong>Fixed Navigation:</strong> Implemented a fixed navigation bar with <code>position: fixed; top: 0;</code> and a z-index for visibility.</li>
+                <li><strong>Flexbox Layout:</strong> Used <code>display: flex;</code> and <code>justify-content: space-between;</code> for responsive design.</li>
+                <li><strong>Box-Shadow & Border-Radius:</strong> Applied to improve the visual aesthetics of cards.</li>
+                <li><strong>Button Hover Effects:</strong> Styled buttons with hover effects using <code>transform: scale(1.05);</code> for smooth transitions.</li>
+            </ul>
+
+            <h4>JavaScript Techniques Used</h4>
+            <ul>
+                <li><strong>Navigation Scroll Highlighting:</strong> Used scrollY to detect the active section and apply a highlight class to the corresponding navigation link.</li>
+                <li><strong>Smooth Scrolling:</strong> Implemented smooth scrolling to sections with <code>window.scrollTo(&#123; top: y, behavior: "smooth" });</code>.</li>
+                <li><strong>Dynamic Read More Details:</strong> Implemented <code>openDetails(event, id)</code> and <code>closeDetails(event, id)</code> to toggle detailed information.</li>
+            </ul>
+
+            <h3>Accessibility</h3>
+            <p>Best practises to ensure accessibility on the content page:</p>
+            <ul>
+                <li><strong>Alt Attributes for Images:</strong> Used <code>alt</code> attributes for images to improve screen reader compatibility.</li>
+                <li><strong>High Contrast Colors:</strong> Ensured high contrast colors for readability, making sure text stands out against the background.</li>
+                <li><strong>Keyboard-Friendly Navigation:</strong> Implemented keyboard-friendly navigation to ensure all interactive elements are accessible via keyboard.</li>
+            </ul>
+
+            <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+            <p><a href="validation_ST1.html#contentVal">Link to the validation page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+            <h3>Link to the page</h3>
+            <p><a href="content_STU1.html">Link to the content page</a></p>
+        </section>
+
+        <section>
+            <h2 id="challenge">Challenges and Lessons Learned</h2>
+            <h3>Challenges & Solutions</h3>
+            <ul>
+                <li><strong>Challenge:</strong> Ensuring the splash screen loads correctly across different screen sizes.</li>
+                <li><strong>Solution:</strong> Used <code>background-size: cover;</code> to make the splash screen responsive.</li>
+                <li><strong>Challenge:</strong> Implementing a smooth transition with the auto-redirect.</li>
+                <li><strong>Solution:</strong> The <code>&lt;meta http-equiv="refresh"&gt;</code> tag enabled an automatic redirect without requiring JavaScript.</li>
+                <li><strong>Challenge:</strong> Ensuring proper alignment of elements across screen sizes.</li>
+                <li><strong>Solution:</strong> Used <code>display: flex;</code> and media queries for layout responsiveness.</li>
+                <li><strong>Challenge:</strong> Handling modal interactions efficiently on the volunteer page.</li>
+                <li><strong>Solution:</strong> Used event listeners to manage modal state (open/close) dynamically.</li>
+                <li><strong>Challenge:</strong> Ensuring navigation remained fixed without overlapping content.</li>
+                <li><strong>Solution:</strong> Added <code>padding-top: 100px;</code> to prevent overlap of fixed navigation bar.</li>
+                <li><strong>Challenge:</strong> Smooth scrolling with an offset on the content page.</li>
+                <li><strong>Solution:</strong> Used <code>yOffset = -80;</code> to align the scrolling with the navigation height.</li>
+            </ul>
+            <h3>Lesson Learned</h3>
+            <ul>
+            <li>Lesson LeaLearned the importance of accessibility, ensuring all content is structured with appropriate heading levels.</li>
+            <li>Improved understanding of flexbox for layout design and positioning.</li>
+            <li>Gained better handling of event listeners and dynamic content display in JavaScript.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 id="compliance">Compliance</h2>
+            <ul>
+                <li><strong>Janet Regulations Compliance:</strong> Ensured accessibility by maintaining high contrast and readability across all pages.</li>
+                <li><strong>HTML Structure:</strong> Followed proper HTML structuring without excessive decorative elements to enhance readability and accessibility.</li>
+                <li><strong>Responsive Design:</strong> Tested across multiple screen sizes to ensure mobile-first responsiveness and adaptability.</li>
+                <li><strong>JavaScript:</strong> Written in a non-intrusive manner, ensuring it enhances usability without interfering with the content or layout.</li>
+                <li><strong>Semantic HTML:</strong> Ensured proper use of semantic HTML elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> for improved document structure and accessibility.</li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2 id="ref">References</h2>
+            <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+            <ul class="ref">
+                <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
+                <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li>
+            </ul>
+        </section>
+
+        <p class="top"><a href="#top">Go top</a></p>
+    </main>
+
+    <!-- Sidebar area -->
+    <aside>
+        <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+        <ul class="top-level-ul">
+            <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+            <li>Student 1</li>
+            <ul>
+                <li><a href="#splash">Splash page</a></li>
+                <li><a href="#volunteer">Volunteer page</a></li>
+                <li><a href="#content">Content page</a></li>
+            </ul>
+            <li>Student 2</li>
+            <ul>
+                <li><a href="#">Home page </a></li>
+                <li><a href="#">Table page</a></li>
+                <li><a href="#">Content page</a></li>
+            </ul>
+            <li>Student 3</li>
+            <ul>
+                <li><a href="#feedback">Feedback page</a> </li>
+                <li><a href="#team">Team page</a></li>
+                <li><a href="#content3">Content page</a></li>
+            </ul>
+            <li>Student 4</li>
+            <ul>
+                <li><a href="#">Profile page </a></li>
+                <li><a href="#">Sitemap page</a></li>
+                <li><a href="#">Content page</a></li>
+            </ul>
+            <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#ref">References</a></li>
+        </ul>
+    </aside>
+</div>
+
+<footer>
+    <p>Replace the footer with your teams' website footer</p>
+</footer>
+</body>
+</html>

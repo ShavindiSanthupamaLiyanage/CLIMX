@@ -1,0 +1,94 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: url('images/splash.png') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+/* Background overlay for readability */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 0;
+}
+
+.splash-container {
+    position: relative;
+    z-index: 1;
+    /*background: rgba(0, 0, 0, 0.4);*/
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 700px;
+    text-align: center;
+    /*box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);*/
+}
+
+/* Reduce logo size */
+.content img {
+    width: 150px; /* Keep existing size */
+    height: auto;
+    display: block;
+    margin: -50px auto 0; /* Move up by 20px */
+}
+
+.title {
+    font-size: 50px; /* Reduced */
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.mission {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.team h2 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.team ul {
+    list-style: none;
+    padding: 0;
+}
+
+.team li {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.loader {
+    font-size: 1.3em;
+    margin-bottom: 1px; /* Keeping the original top space */
+    font-weight: bold;
+    position: relative;
+}
+
+.loader span {
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
