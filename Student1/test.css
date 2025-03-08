@@ -1,0 +1,35 @@
+#sticky-header{
+    position: sticky;
+    top: 0;
+}
+
+.sub-header {
+    align-items: center;
+    background-color: #237A57;
+    color: #ffffff;
+    text-align: center;
+    border-bottom: 2px solid #ffffff;
+}
+
+.sub-nav{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.sub-nav li {
+    display: inline-block;
+}
+
+
+.sub-nav li a {
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.sub-nav li a:hover, .sub-nav li a.active{
+    border-bottom: 6px solid #ffffff;
+}

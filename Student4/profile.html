@@ -2,9 +2,245 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../styles/style.css">  <!-- Global Styles -->
+    <link rel="stylesheet" href="profile.css">  <!-- Page-Specific Styles -->
 </head>
 <body>
+<header class="main-header">
+    <div class="header-line"></div>
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="../Student2/home.html"
+            ><img src="../images/logo.PNG" alt="Logo" class="logo-image"
+            /></a>
+        </div>
+        <div class="main-menu">
+            <ul>
+                <li><a href="../Student2/home.html">Home</a></li>
+                <li><a href="../Student1/volunteer.html">Volunteer</a></li>
+                <li><a href="../Student2/table.html">Tables</a></li>
+                <li><a href="profile.html" class="active">User Profile</a></li>
+                <li><a href="../Student3/feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="../Student3/team.html">Team</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="profile-page">
+    <!-- Left Section: Profile & Skills -->
+    <div class="left-section">
+        <div class="profile-card">
+            <img src="images/ProfileImage.jpg" alt="User Avatar" class="profile-avatar">
+            <h1>Emily Wilson</h1>
+            <p class="role">Computer Science Student</p>
+            <p class="quote">"A quotation that captures this user's personality."</p>
+            <p class="details"><strong>Age:</strong> 23</p>
+            <p class="details"><strong>Work:</strong> Student</p>
+            <p class="details"><strong>Status:</strong> Single</p>
+            <p class="details"><strong>Country:</strong> Sri Lanka</p>
+        </div>
+
+        <div class="skills-card">
+            <h2>Skills</h2>
+            <p>Communication</p>
+            <div class="progress-bar"><div class="progress communication"></div></div>
+            <p>Team Working</p>
+            <div class="progress-bar"><div class="progress teamwork"></div></div>
+            <p>IT</p>
+            <div class="progress-bar"><div class="progress it"></div></div>
+            <p>Presentation</p>
+            <div class="progress-bar"><div class="progress presentation"></div></div>
+        </div>
+    </div>
+
+    <!-- Middle Section -->
+    <div class="middle-section">
+        <div class="shortbio-card">
+            <h3>Short bio</h3>
+            <p> Emily is a third-year Computer Science student at the University of Westminster, passionate about using technology for environmental sustainability. She actively participates in climate action initiatives, including tree-planting and beach cleanups, and explores tech-driven solutions for a greener future." 🌱💻</p>
+        </div>
+
+        <div class="cards-container">
+            <div class="info-card">
+                <h2>Goals</h2>
+                <div class="list-container">
+                    <div class="list-card">Educate communities about global warming and sustainability through workshops and social media campaigns.</div>
+                    <div class="list-card">Contribute to reforestation efforts by volunteering in tree-planting initiatives.</div>
+                    <div class="list-card">Encourage eco-friendly habits like reducing plastic use, composting, and using renewable energy sources.</div>
+                    <div class="list-card">Engage with groups working on wildlife conservation, waste management, and water conservation.</div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h2>Frustrations</h2>
+                <div class="list-container">
+                    <div class="list-card">Lack of Awareness</div>
+                    <div class="list-card">imited Funding for Environmental Projects</div>
+                    <div class="list-card">Lack of Government Support</div>
+                    <div class="list-card">Deforestation & Habitat Loss</div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h2>Experience</h2>
+                <div class="list-container">
+                    <div class="list-card"><strong>Volunteered at a Wildlife Conservation Center</strong> - Helped rehabilitate injured animals and educate visitors about biodiversity.</div>
+                    <div class="list-card"><strong>Led a Beach Cleanup Initiative</strong> - Organized a community-driven beach cleanup, removing 200kg of plastic waste.</div>
+                    <div class="list-card"><strong>Developed a Carbon Footprint Tracker</strong> - Built a web tool to help users track and reduce their carbon footprint.</div>
+                    <div class="list-card"><strong>Conducted Sustainability Workshops</strong> - Trained students and professionals on how to integrate sustainability into daily life.</div>
+                    <div class="list-card"><strong>Worked on a Smart Waste Management System</strong> - Collaborated on an IoT-based solution to optimize garbage collection in urban areas.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+        <div class="volunteer-card">
+            <h2>Volunteering Availability</h2>
+            <p>See the available time slots for volunteering.</p>
+            <div class="calendar-placeholder">
+                <table class="calendar">
+                    <thead>
+                    <tr>
+                        <th colspan="7">May 2025</th> <!-- Change month and year as needed -->
+                    </tr>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td></td>  <!-- Empty cells for days before the 1st -->
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td class="available">3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td class="available">7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td class="available">10</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td class="available">15</td>
+                        <td>16</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td class="available">18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td class="available">26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td>31</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="un-goals-card">
+            <h2>UN Goals I Support</h2>
+            <div class="goals-container">
+                <img src="images/ClimateAction.jpg" alt="Goal 1">
+                <img src="images/SustanableCities.jpg" alt="Goal 5">
+                <img src="images/CleanWater06.jpg" alt="Goal 2">
+                <img src="images/CleanEnergy.jpg" alt="Goal 13">
+            </div>
+        </div>
+
+        <div class="contact-card">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="hover-btn">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<hr id="bottom-hr">
+<footer class="main-footer">
+    <div class="main-footer-content">
+        <a href="../Student2/home.html"><img src="../images/logo.PNG" alt="Logo" class="logo-image"></a>
+        <p>"A Greener Future – Steps Toward Sustainability"</p>
+
+        <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+
+        </div>
+    </div>
+
+    <div class="main-footer-content">
+        <ul>
+            <li><h4>Editors</h4></li>
+            <li>Shavindi Liyanage</li>
+            <li>Dilshan Kavinda</li>
+            <li>Benuri Palihakkara</li>
+            <li>Devindi Nimalrathna</li>
+        </ul>
+    </div>
+
+    <div class="main-footer-content">
+        <ul>
+            <li><h4>Editor Pages</h4></li>
+            <li><a href="../Student1/pageEditor_ST1.html">Student 1</a></li>
+            <li><a href="../Student2/pageEditor_ST2.html">Student 2</a></li>
+            <li><a href="../Student3/pageEditor_ST3.html">Student 3</a></li>
+            <li><a href="pageEditor_ST4.html">Student 4</a></li>
+        </ul>
+    </div>
+
+    <div class="main-footer-content">
+        <ul>
+            <li><h4>Validation Pages</h4></li>
+            <li><a href="../Student1/validation_ST1.html">Student 1</a></li>
+            <li><a href="../Student2/validation_ST2.html">Student 2</a></li>
+            <li><a href="../Student3/validation_ST3.html">Student 3</a></li>
+            <li><a href="validation_ST4.html">Student 4</a></li>
+        </ul>
+    </div>
+</footer>
+<div class="main-footer-bottom">
+    &copy; climx.com | Designed by Climx
+</div>
 
 </body>
 </html>

@@ -1,0 +1,263 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Profile Page Layout */
+.profile-page {
+    display: flex;
+    justify-content: space-between; /* Distributes sections evenly */
+    align-items: flex-start;
+    max-width: 95%;
+    margin: 10px 10px 10px 10px; /* Centers the layout */
+    padding: 10px 10px 10px 10px; /* Prevents excessive spacing */
+    gap: 15px; /* Reduces gap */
+}
+
+
+/* Ensure Equal Width for Sections */
+.left-section {
+    flex: 1;
+    max-width: 20%;
+
+}
+.middle-section{
+    flex:1;
+    max-width: 30%;
+    margin-left: 30px;
+}
+.right-section{
+    flex: 1;
+    max-width: 30;
+}
+
+/* Profile Card */
+.profile-card {
+    background: #237A57;
+    color: white;
+    text-align: center;
+    padding: 15px 15px 15px 15px;
+    border-radius: 10px;
+    height: 450px;
+    width: 100%;
+
+}
+
+.profile-avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+/* Skills Section */
+.skills-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* Progress Bars */
+.progress-bar {
+    background: #ddd;
+    border-radius: 5px;
+    height: 10px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Skill Progress Colors */
+.communication { width: 80%; background: #FF9800; }
+.teamwork { width: 70%; background: #2196F3; }
+.it { width: 85%; background: #FF5722; }
+.presentation { width: 65%; background: #3F51B5; }
+
+/* Middle Section Styling */
+/* Main container for all sections */
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Main card styling */
+.info-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* List container inside each card */
+.list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Spacing between list items */
+    margin-top: 10px;
+}
+
+/* Individual list cards */
+.list-card {
+    background: #f4f4f4;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect for list items */
+.list-card:hover {
+    transform: scale(1.05);
+    background: #e0e0e0;
+}
+
+.shortbio-card{
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+/* Right Section */
+.volunteer-card, .un-goals-card, .contact-card {
+    margin-bottom: 10px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+
+}
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.calendar th, .calendar td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    width: 14.28%; /* Ensures equal spacing across 7 columns */
+}
+
+.calendar th {
+    background-color: #237A57;
+    color: white;
+    font-weight: bold;
+}
+
+.calendar td {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.calendar td:hover {
+    background-color: #d4edda;
+}
+
+.calendar td.active {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Tooltip for available days */
+.calendar td.available {
+    position: relative;
+    background-color: #FFD700; /* Gold color */
+    font-weight: bold;
+    color: black;
+    border: 2px solid #FFA500; /* Orange border */
+    cursor: pointer;
+}
+
+/* Tooltip Styling */
+.calendar td.available::after {
+    content: "Available for volunteering"; /* Tooltip text */
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    bottom: 120%; /* Position above the date */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show tooltip on hover */
+.calendar td.available:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.goals-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Adds spacing between images */
+    flex-wrap: wrap; /* Ensures images wrap on smaller screens */
+}
+
+.goals-container img {
+    width: 120px; /* Adjust width as needed */
+    height: 120px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures images maintain aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    transition: transform 0.3s ease-in-out;
+}
+
+.goals-container img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Contact Form */
+input, textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.hover-btn {
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 1024px) {
+    .profile-page {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-section, .middle-section, .right-section {
+        width: 100%;
+    }
+}

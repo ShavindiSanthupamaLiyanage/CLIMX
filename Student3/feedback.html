@@ -2,9 +2,154 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="../styles/style.css">
 
+</head>
+
+<body>
+<header class="main-header">
+    <div class="header-line"></div>
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="../Student2/home.html"
+            ><img src="../images/logo.PNG" alt="Logo" class="logo-image"
+            /></a>
+        </div>
+        <div class="main-menu">
+            <ul>
+                <li><a href="../Student2/home.html">Home</a></li>
+                <li><a href="../Student1/volunteer.html">Volunteer</a></li>
+                <li><a href="../Student2/table.html">Tables</a></li>
+                <li><a href="../Student4/profile.html">User Profile</a></li>
+                <li><a href="feedback.html" class="active">Feedback</a></li>
+                <li><a href="../Student4/sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<form id="feedback-form" action="#" method="post">
+<!--    <header class="feedback-header">Feedback Form</header>-->
+    <h1>Feedback Form</h1>
+    <fieldset>
+        <legend>Personal Details</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required title="Please enter a name" placeholder="Enter your name">
+        <span class="error" id="nameError">Please enter your full name.</span>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required title="Please enter a valid email address" placeholder="Enter a valid email address">
+        <span class="error" id="emailError">Please enter a valid email.</span>
+
+        <label for="phone">Telephone Number:</label>
+        <input type="tel" id="phone" name="phone" required title="Please enter a valid phone number" placeholder="Enter your phone number">
+        <span class="error" id="phoneError">Please enter a valid phone number.</span>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="3" required title="" placeholder="Enter your Address"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Feedback Details</legend>
+        <label for="message">Comment or Message:</label>
+        <textarea id="message" name="message" rows="4" maxlength="500" oninput="updateCounter()" required></textarea>
+        <small id="charCount">500 characters remaining</small>
+
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+            <option value="general">General</option>
+            <option value="service">Service</option>
+            <option value="product">Product</option>
+        </select>
+
+        <label>Preferred Contact Method:</label>
+        <input type="checkbox" name="contact_method" value="email"> Email
+        <input type="checkbox" name="contact_method" value="phone"> Phone
+
+        <label>How did you hear about us?</label>
+        <input type="radio" name="source" value="online"> Online
+        <input type="radio" name="source" value="friend"> Friend
+        <input type="radio" name="source" value="advertisement"> Advertisement
+
+        <label for="feedback-date">Date of Experience:</label>
+        <input type="datetime-local" id="feedback-date" name="feedback-date" required>
+
+        <label for="attachment">Upload an Attachment:</label>
+        <input type="file" id="attachment" name="attachment">
+    </fieldset>
+
+    <fieldset>
+        <legend>Rating</legend>
+        <div class="rating">
+            <span onclick="setRating(1)">⭐</span>
+            <span onclick="setRating(2)">⭐</span>
+            <span onclick="setRating(3)">⭐</span>
+            <span onclick="setRating(4)">⭐</span>
+            <span onclick="setRating(5)">⭐</span>
+        </div>
+    </fieldset>
+
+    <!-- Popup Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Thank you for your feedback! Data saved successfully.</p>
+        </div>
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
+<hr id="bottom-hr">
+<footer class="main-footer">
+    <div class="main-footer-content">
+        <a href="../Student2/home.html"><img src="../images/logo.PNG" alt="Logo" class="logo-image"></a>
+        <p>"A Greener Future – Steps Toward Sustainability"</p>
+
+        <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+
+        </div>
+    </div>
+
+    <div class="main-footer-content">
+        <ul>
+            <li><h4>Editors</h4></li>
+            <li>Shavindi Liyanage</li>
+            <li>Dilshan Kavinda</li>
+            <li>Benuri Palihakkara</li>
+            <li>Devindi Nimalrathna</li>
+        </ul>
+    </div>
+
+    <div class="main-footer-content">
+        <ul>
+            <li><h4>Editor Pages</h4></li>
+            <li><a href="../Student1/pageEditor_ST1.html">Student 1</a></li>
+            <li><a href="../Student2/pageEditor_ST2.html">Student 2</a></li>
+            <li><a href="pageEditor_ST3.html">Student 3</a></li>
+            <li><a href="../Student4/pageEditor_ST4.html">Student 4</a></li>
+        </ul>
+    </div>
+
+    <div class="main-footer-content">
+        <ul>
+            <li><h4>Validation Pages</h4></li>
+            <li><a href="../Student1/validation_ST1.html">Student 1</a></li>
+            <li><a href="../Student2/validation_ST2.html">Student 2</a></li>
+            <li><a href="validation_ST3.html">Student 3</a></li>
+            <li><a href="../Student4/validation_ST4.html">Student 4</a></li>
+        </ul>
+    </div>
+</footer>
+<div class="main-footer-bottom">
+    &copy; climx.com | Designed by Climx
+</div>
+<script src="feedback.js"></script>
 </body>
 </html>

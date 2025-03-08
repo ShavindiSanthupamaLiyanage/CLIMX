@@ -8,44 +8,39 @@ function closeDetails(event, id) {
     document.getElementById(id).style.display = "none";
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll("section[id]");
-    const navLinks = document.querySelectorAll("nav ul li a");
+//active page hover
+const navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        // Remove 'active' class from all links
+        navLinks.forEach(link => link.classList.remove('active'));
+        // Add 'active' class to the clicked link
+        link.classList.add('active');
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("section"); // Select all sections
+    const navLinks = document.querySelectorAll(".nav-link"); // Select all nav links
 
     function highlightNav() {
-        let scrollY = window.scrollY;
+        let scrollPosition = window.scrollY;
 
         sections.forEach(section => {
             const sectionTop = section.offsetTop - 100; // Adjust for navbar height
-            const sectionHeight = section.offsetHeight;
+            const sectionBottom = sectionTop + section.offsetHeight;
             const sectionId = section.getAttribute("id");
 
-            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
                 navLinks.forEach(link => {
-                    link.classList.remove("active");
-                    if (link.getAttribute("href") === `#${sectionId}`) {
-                        link.classList.add("active");
+                    link.classList.remove("active"); // Remove active class
+                    if (link.getAttribute("href").includes(sectionId)) {
+                        link.classList.add("active"); // Add active class
                     }
                 });
             }
         });
     }
-
-    // Smooth scroll with offset
-    navLinks.forEach(link => {
-        link.addEventListener("click", function (event) {
-            event.preventDefault();
-            const targetId = this.getAttribute("href").substring(1);
-            const targetElement = document.getElementById(targetId);
-
-            if (targetElement) {
-                const yOffset = -80; // Offset to align with the top of the section
-                const y = targetElement.getBoundingClientRect().top + window.scrollY + yOffset;
-
-                window.scrollTo({ top: y, behavior: "smooth" });
-            }
-        });
-    });
-
     window.addEventListener("scroll", highlightNav);
 });

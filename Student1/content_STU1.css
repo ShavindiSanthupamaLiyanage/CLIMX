@@ -2,23 +2,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding-top: 100px;
-    background-color: #bee1c2;
-    /*background-color: #ffffff;*/
 }
 
 h2{
     text-align: center;
-}
-
-.header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
 }
 
 p {
@@ -28,6 +15,12 @@ p {
     margin-bottom: 15px;
 }
 
+#navigation{
+    position: sticky;
+    top: 0;
+}
+
+/* Highlight style for active link */
 .highlight {
     font-weight: bold;
     color: #000000;
@@ -39,19 +32,58 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
+    display: inline-block;
 }
 
+/* Navigation links */
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    position: relative;
 }
 
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    color: #000000;
+    border-bottom: 3px solid #ffffff;
+}
+
+/* Active link styling */
 nav ul li a.active {
-    color: yellow; /* Highlight color */
-    border-bottom: 3px solid yellow;
+    color: #000000;
+    border-bottom: 3px solid #ffffff;
+}
+
+/* Styling for the header section */
+.header {
+    /*background-color: rgba(6, 103, 63, 0.89);*/
+    background-color: #227754FF;
+    color: #ffffff;
+    padding: 15px 20px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    width: 100%;
+    border-bottom: 2px solid #ffffff;
+    box-sizing: border-box;
+    z-index: 1001;
+}
+
+.header nav ul {
+    text-align: center; /* Center align nav links */
+    padding: 0;
+    margin: 0;
+}
+
+.header nav ul li {
+    margin: 0 20px;
+}
+
+.header nav ul li a {
+    font-size: 16px;
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition */
 }
 
 
@@ -73,7 +105,7 @@ nav ul li a.active {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #095606;
+    background: #237956;
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -143,14 +175,14 @@ nav ul li a.active {
     display: inline-block;
     margin-top: 10px;
     padding: 8px 12px;
-    background: #28a745;
+    background: #237956;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.read-more:hover {
+.read-more:hover, .top-button:hover {
     background-color: #227331;
     transform: scale(1.05);
 }
@@ -159,11 +191,11 @@ nav ul li a.active {
 .details-box {
     display: none;
     position: fixed; /* Keeps it centered on the screen */
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 500px;
-    max-height: 600px; /* Limits height to 80% of the viewport */
+    max-height: 550px; /* Limits height to 80% of the viewport */
     overflow-y: auto; /* Enables vertical scrolling if content exceeds height */
     background: white;
     padding: 20px;

@@ -11,31 +11,31 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
+
 main {
     flex: 3;
 }
+
 aside {
     flex: 1;
     background-color: #f4f4f4;
     padding: 15px;
-    border: 1px solid #ddd;
+    border: 3px solid #237956;
     margin-right: 20px;
+    border-radius: 20px;
+    height: 10%;
 }
+
 section {
     margin-bottom: 20px;
     padding: 15px;
-    border: 1px solid #ddd;
+    border: 3px solid #237956;
     background-color: #fafafa;
-}
-header, footer {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+    border-radius: 20px;
 }
 
 .ref li{
-    list-style: none;
+    list-style: lower-latin;
     padding-bottom: 9px;
 }
 
@@ -50,9 +50,10 @@ aside li{
 .stud {
     text-align: center;
     line-height: 0;
-    background-color: #cbccc2ef;
+    background-color: #237A57;
     color: white;
     margin-top: 8px;
+    border-radius: 0;
 }
 
 .top {
@@ -62,20 +63,44 @@ aside li{
 }
 
 .top a {
-    padding: 10px 20px; /* Adds padding for button-like feel */
-    background-color: #007bff; /* Button color */
-    color: white; /* Text color */
-    text-decoration: none; /* Removes underline */
-    border-radius: 20px; /* Rounds the corners */
-    font-size: 12px; /* Adjust font size */
-    font-weight: bold; /* Make the text stand out */
+    padding: 10px 20px;
+    background-color: #2f9874;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .top a:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background-color: #237A57; /* Darker shade on hover */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
 }
 
 img{
     width: 90%;
+}
+
+/* Ensure links remain the same color even after clicking */
+a:link,
+a:visited {
+    color: #000000;
+    text-decoration: none;
+}
+
+.link-button {
+    background-color: #2f9874;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #237A57;
 }

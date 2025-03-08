@@ -6,14 +6,30 @@
     <title>Page Editor Student - 01</title>
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="../styles/pageEditor_validator.css"> <!-- External CSS link -->
-
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
+
 <body>
-
-<!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
-
-<header id="top">
-    <h1>Replace the header with your teams' website header</h1>
+<header class="main-header">
+    <div class="header-line"></div>
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="../Student2/home.html">
+                <img src="../images/logo.PNG" alt="Logo" class="logo-image">
+            </a>
+        </div>
+        <div class="main-menu">
+            <ul>
+                <li><a href="../Student2/home.html">Home</a></li>
+                <li><a href="../Student1/volunteer.html" >Volunteer</a></li>
+                <li><a href="../Student2/table.html">Tables</a></li>
+                <li><a href="../Student4/profile.html">User Profile</a></li>
+                <li><a href="../Student3/feedback.html">Feedback</a></li>
+                <li><a href="../Student4/sitemap.html">Sitemap</a></li>
+                <li><a href="../Student3/team.html">Team</a></li>
+            </ul>
+        </div>
+    </nav>
 </header>
 
 <section class="stud">
@@ -23,7 +39,6 @@
 <div class="container">
     <!-- Main content area -->
     <main>
-
         <!-- Update those first three sections for the pages you were responsible to implement -->
         <section>
             <h2 id="splash">Splash Page</h2>
@@ -54,11 +69,14 @@
                     <li><strong>Keyboard Navigation:</strong> No unnecessary auto-focus elements, ensuring smooth navigation.</li>
                     <li><strong>Time Consideration:</strong> A 4-second delay provides enough time for users to recognize the content before redirection.</li>
                 </ul>
-            <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-            <p><a href="validation_ST1.html#splashVal">Link to the validation page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
-            <h3>Link to the page</h3>
-            <p><a href="splash.html">Link to the splash screen</a></p>
+            <a href="validation_ST1.html#splashVal">
+                <button class="link-button">Go to Validation Page</button>
+            </a>
+
+            <a href="splash.html">
+                <button class="link-button">Go to Splash Page</button>
+            </a>
         </section>
 
         <section>
@@ -100,11 +118,13 @@
                 <li><strong>Form Labels:</strong> Input fields include <code>&lt;label&gt;</code> elements for clarity.</li>
             </ul>
 
-            <h3>Link to the Validation Page</h3>
-            <p><a href="validation_ST1.html#volunteerVal">Link to the validation page</a>.</p>
+            <a href="validation_ST1.html#volunteerVal">
+                <button class="link-button">Go to Validation Page</button>
+            </a>
 
-            <h3>Link to the Page</h3>
-            <p><a href="volunteer.html">Link to the volunteer page.</a></p>
+            <a href="volunteer.html">
+                <button class="link-button">Go to Volunteer Page</button>
+            </a>
         </section>
 
         <section>
@@ -145,14 +165,15 @@
             <ul>
                 <li><strong>Alt Attributes for Images:</strong> Used <code>alt</code> attributes for images to improve screen reader compatibility.</li>
                 <li><strong>High Contrast Colors:</strong> Ensured high contrast colors for readability, making sure text stands out against the background.</li>
-                <li><strong>Keyboard-Friendly Navigation:</strong> Implemented keyboard-friendly navigation to ensure all interactive elements are accessible via keyboard.</li>
             </ul>
 
-            <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-            <p><a href="validation_ST1.html#contentVal">Link to the validation page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+            <a href="validation_ST1.html#contentVal">
+                <button class="link-button">Go to Validation Page</button>
+            </a>
 
-            <h3>Link to the page</h3>
-            <p><a href="content_STU1.html">Link to the content page</a></p>
+            <a href="content_STU1.html">
+                <button class="link-button">Go to Content Page</button>
+            </a>
         </section>
 
         <section>
@@ -174,7 +195,7 @@
             </ul>
             <h3>Lesson Learned</h3>
             <ul>
-            <li>Lesson LeaLearned the importance of accessibility, ensuring all content is structured with appropriate heading levels.</li>
+            <li>The importance of accessibility, ensuring all content is structured with appropriate heading levels.</li>
             <li>Improved understanding of flexbox for layout design and positioning.</li>
             <li>Gained better handling of event listeners and dynamic content display in JavaScript.</li>
             </ul>
@@ -182,23 +203,82 @@
 
         <section>
             <h2 id="compliance">Compliance</h2>
-            <ul>
-                <li><strong>Janet Regulations Compliance:</strong> Ensured accessibility by maintaining high contrast and readability across all pages.</li>
-                <li><strong>HTML Structure:</strong> Followed proper HTML structuring without excessive decorative elements to enhance readability and accessibility.</li>
-                <li><strong>Responsive Design:</strong> Tested across multiple screen sizes to ensure mobile-first responsiveness and adaptability.</li>
-                <li><strong>JavaScript:</strong> Written in a non-intrusive manner, ensuring it enhances usability without interfering with the content or layout.</li>
-                <li><strong>Semantic HTML:</strong> Ensured proper use of semantic HTML elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> for improved document structure and accessibility.</li>
-            </ul>
+            <p>The Janet network is an essential link for the UK's educational and research institutions, maintaining
+                rigorous security standards. As the website supervisor, I assure you that "CLIMX" fully complies with
+                these Janet standards. Group E has independently developed the website, and both the name and logo are
+                original, with no external influences whatsoever. To prevent any legal issues, we have meticulously
+                selected all photographs from non-copyrighted sources, and we will ensure proper attribution for all
+                content used.
+            </p>
         </section>
-
 
         <section>
             <h2 id="ref">References</h2>
-            <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
-            <ul class="ref">
-                <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
-                <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li>
-            </ul>
+            <ul>
+            <li>
+                JavaScript Template Strings Available at:
+                <a href="https://www.w3schools.com/js/js_string_templates.asp" target="_blank" rel="noopener noreferrer">
+                    <i>https://www.w3schools.com/js/js_string_templates.asp</i>
+                </a>
+                (Last accessed: 08 March 2025).
+            </li>
+            <li>
+                CSS Gradient Available at:
+                <a href="https://cssgradient.io/" target="_blank" rel="noopener noreferrer">
+                    <i>https://cssgradient.io/</i>
+                </a>
+                (Last accessed: 08 March 2025).
+            </li>
+            <li>
+                JavaScript Function call() Available at:
+                <a href="https://www.w3schools.com/js/js_function_call.asp" target="_blank">
+                    <i>https://www.w3schools.com/js/js_function_call.asp</i>
+                </a>
+                (Last accessed: 08 March 2025).
+            </li>
+            <li>
+                HTML Images, Links and Special Characters, CSS for Links, Images, CSS positioning (Week 03 Lecture notes) Available at:
+                <a href="https://learning.westminster.ac.uk/ultra/courses/_100151_1/outline/edit/document/_5174772_1?courseId=_100151_1&view=content&state=view" target="_blank" >
+                    <i>https://learning.westminster.ac.uk/ultra/courses/_100151_1/outline/edit/document/_5174772_1?courseId=_100151_1&view=content&state=view</i>
+                </a>
+                (Last accessed: 08 March 2025).
+            </li>
+            <li>
+                Freepick Available at:
+                <a href="https://www.freepik.com/" target="_blank" >
+                    <i>https://www.freepik.com/</i>
+                </a>
+                (Last accessed: 08 March 2025).
+            </li>
+            <li>
+                iStock images Available at:
+                <a href="https://www.istockphoto.com/" target="_blank" >
+                    <i>https://www.istockphoto.com/</i>
+                </a>
+                (Last accessed: 08 March 2025).
+            </li>
+            <li>
+                FlatIcons images Available at:
+                <a href="https://www.flaticon.com/" target="_blank" >
+                    <i>https://www.flaticon.com/</i>
+                </a>
+                (Last accessed: 08 March 2025).
+            </li>
+                <li>
+                    UN Sustainable Development Gaol 13 - Climate Action Available at:
+                    <a href="https://sdgs.un.org/goals/goal13" target="_blank" >
+                        <i>https://sdgs.un.org/goals/goal13</i>
+                    </a>
+                    (Last accessed: 08 March 2025).
+                </li>
+                <li>
+                    UNFCCC official website Available at:
+                    <a href="https://unfccc.int/" target="_blank" >
+                        <i>https://unfccc.int//</i>
+                    </a>
+                    (Last accessed: 08 March 2025).
+                </li>
+        </ul>
         </section>
 
         <p class="top"><a href="#top">Go top</a></p>
@@ -207,34 +287,14 @@
     <!-- Sidebar area -->
     <aside>
         <h3>Core pages developed:</h3>
-
-        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
         <ul class="top-level-ul">
-            <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
             <li>Student 1</li>
             <ul>
                 <li><a href="#splash">Splash page</a></li>
                 <li><a href="#volunteer">Volunteer page</a></li>
                 <li><a href="#content">Content page</a></li>
             </ul>
-            <li>Student 2</li>
-            <ul>
-                <li><a href="#">Home page </a></li>
-                <li><a href="#">Table page</a></li>
-                <li><a href="#">Content page</a></li>
-            </ul>
-            <li>Student 3</li>
-            <ul>
-                <li><a href="#feedback">Feedback page</a> </li>
-                <li><a href="#team">Team page</a></li>
-                <li><a href="#content3">Content page</a></li>
-            </ul>
-            <li>Student 4</li>
-            <ul>
-                <li><a href="#">Profile page </a></li>
-                <li><a href="#">Sitemap page</a></li>
-                <li><a href="#">Content page</a></li>
-            </ul>
+
             <li><a href="#challenge">Challenges and Lessons Learned</a></li>
             <li><a href="#compliance">Compliance</a></li>
             <li><a href="#ref">References</a></li>
@@ -242,8 +302,58 @@
     </aside>
 </div>
 
-<footer>
-    <p>Replace the footer with your teams' website footer</p>
+<hr id="bottom-hr">
+<footer class="main-footer">
+    <div class="main-footer-content">
+        <a href="../Student2/home.html"><img src="../images/logo.PNG" alt="Logo" class="logo-image"></a>
+        <p>"A Greener Future – Steps Toward Sustainability"</p>
+
+        <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+
+        </div>
+    </div>
+
+    <div class="main-footer-content">
+        <ul>
+            <li><h4>Editors</h4></li>
+            <li>Shavindi Liyanage</li>
+            <li>Dilshan Kavinda</li>
+            <li>Benuri Palihakkara</li>
+            <li>Devindi Nimalrathna</li>
+        </ul>
+    </div>
+
+    <div class="main-footer-content">
+        <ul>
+            <li><h4>Editor Pages</h4></li>
+            <li><a href="pageEditor_ST1.html">Student 1</a></li>
+            <li><a href="../Student2/pageEditor_ST2.html">Student 2</a></li>
+            <li><a href="../Student3/pageEditor_ST3.html">Student 3</a></li>
+            <li><a href="../Student4/pageEditor_ST4.html">Student 4</a></li>
+        </ul>
+    </div>
+
+    <div class="main-footer-content">
+        <ul>
+            <li><h4>Validation Pages</h4></li>
+            <li><a href="validation_ST1.html">Student 1</a></li>
+            <li><a href="../Student2/validation_ST2.html">Student 2</a></li>
+            <li><a href="../Student3/validation_ST3.html">Student 3</a></li>
+            <li><a href="../Student4/validation_ST4.html">Student 4</a></li>
+        </ul>
+    </div>
 </footer>
+<div class="main-footer-bottom">
+    &copy; CLIMX | All rights reserved
+    <div class="main-footer-bottom-link">
+        <span class="italic-text">Page edited by:</span>
+        <a href="pageEditor_ST1.html" class="italic-text">Shavindi Liyanage (View Editor Profile)</a>
+    </div>
+</div>
+<script src="https://kit.fontawesome.com/1808a0d1bd.js" crossorigin="anonymous"></script>
 </body>
 </html>

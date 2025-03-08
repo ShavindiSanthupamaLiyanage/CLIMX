@@ -1,16 +1,17 @@
-h2 {
+h1, h2, h3, h4{
     text-align: center;
 }
 
-/*body{*/
-/*    background-color: #2fcb86;*/
-/*}*/
+h2 {
+    font-size: 26px;
+}
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    font-size: 24px;
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    text-align: center;
 }
 
 .banner-section, .volunteer-section, .table-section, .leaderboard-section, .impact-tracker, .share-section, .feedback-section, .stats-banner-section {
@@ -140,7 +141,10 @@ th, td {
 }
 
 th {
-    background-color: #4CAF50;
+    /*background-color: #4CAF50;*/
+    background: linear-gradient(0deg, rgba(45, 253, 170, 1) 0%, rgba(21, 207, 138, 1) 0%, rgba(40, 143, 118, 1) 78%, rgba(36, 122, 87, 1) 100%);
+    /*background: linear-gradient(0deg,  rgba(36, 122, 87, 1)0%,  rgba(40, 143, 118, 1) 0%, rgba(21, 207, 138, 1)78%,  rgba(45, 253, 170, 1)100%);*/
+
     color: white;
 }
 
@@ -157,16 +161,43 @@ tr:nth-child(even) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .program-card {
-    background: #fff;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px;
-    width: 250px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column; /* Ensures all elements inside are stacked */
+    justify-content: space-between; /* Pushes elements to distribute evenly */
+    align-items: center;
+    width: 240px; /* Set a fixed width */
+    /*min-height: 550px; !* Ensures all cards have the same height *!*/
+    padding: 20px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
 }
+
+.program-card ul {
+    text-align: left;
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+    flex-grow: 1; /* Makes lists take up available space */
+}
+/* Title */
+.program-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.program-card p {
+    font-size: 14px;
+    flex-grow: 1; /* Expands to fill space equally */
+    margin: 10px 0;
+}
+
 
 .program-card img {
     width: 100%; /* Ensures the images fit within their container */
@@ -233,7 +264,7 @@ tr:nth-child(even) {
     object-fit: contain;
 }
 
-.stats-item h3 {
+.stats-item h4 {
     font-size: 1rem;
     margin: 0;
     color: #333;
@@ -475,7 +506,7 @@ button, .primary-btn, .secondary-btn {
 }
 
 button, .primary-btn{
-    background-color: #28a745;
+    background-color: #237956;
 }
 
 .secondary-btn {
@@ -547,6 +578,36 @@ input {
     border-radius: 10px; /* Small curve */
     font-size: 16px;
 }
+
+/* Feedback Modal  */
+.feedback-modal {
+    display: none; /* Hide by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.feedback-modal-content {
+    background: linear-gradient(135deg, #f5f7fa, #2fcb86);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    margin: 15% auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-feedback {
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {

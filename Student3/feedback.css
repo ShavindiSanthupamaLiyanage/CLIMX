@@ -1,0 +1,130 @@
+h1{
+    text-align: center;
+    margin-top: 0;
+}
+
+form {
+    background: #cdf7d7;
+    padding: 20px 50px 50px 50px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+:placeholder-shown{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #131212;
+    border-radius: 4px;
+}
+
+.radio{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #4cf191;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.rating span {
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.rating span:hover, .rating span.active {
+    color: gold;
+    transform: scale(1.2);
+}
+
+/* Modal Popup */
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: #8acba8;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    position: relative;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+small {
+    display: block;
+    margin-top: 5px;
+    color: gray;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
