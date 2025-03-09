@@ -9,43 +9,20 @@ function closeDetails(event, id) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll("section[id]");
-    const navLinks = document.querySelectorAll("nav ul li a");
+    var links = document.querySelectorAll("#nav ul li a.anchor");
 
-    function highlightNav() {
-        let scrollY = window.scrollY;
+    function updateActiveLink() {
+        let scrollPosition = window.scrollY;
 
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 100; // Adjust for navbar height
-            const sectionHeight = section.offsetHeight;
-            const sectionId = section.getAttribute("id");
+        links.forEach(link => {
+            let section = document.querySelector(link.getAttribute("href"));
 
-            if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-                navLinks.forEach(link => {
-                    link.classList.remove("active");
-                    if (link.getAttribute("href") === `#${sectionId}`) {
-                        link.classList.add("active");
-                    }
-                });
+            if (section.offsetTop <= scrollPosition + 100 && section.offsetTop + section.offsetHeight > scrollPosition) {
+                links.forEach(l => l.classList.remove("active")); // Remove active from all links
+                link.classList.add("active"); // Add active to the current link
             }
         });
     }
 
-    // Smooth scroll with offset
-    navLinks.forEach(link => {
-        link.addEventListener("click", function (event) {
-            event.preventDefault();
-            const targetId = this.getAttribute("href").substring(1);
-            const targetElement = document.getElementById(targetId);
-
-            if (targetElement) {
-                const yOffset = -80; // Offset to align with the top of the section
-                const y = targetElement.getBoundingClientRect().top + window.scrollY + yOffset;
-
-                window.scrollTo({ top: y, behavior: "smooth" });
-            }
-        });
-    });
-
-    window.addEventListener("scroll", highlightNav);
+    window.addEventListener("scroll", updateActiveLink);
 });

@@ -1,22 +1,32 @@
 h1{
     text-align: center;
     margin-top: 0;
+    font-size: 40px;
 }
 
 form {
-    background: #cdf7d7;
+    /*background: #cdf7d7;*/
+    background-color: #b4d8c9;
     padding: 20px 50px 50px 50px;
     border-radius: 8px;
     max-width: 600px;
     margin: auto;
     margin-top: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid #237956;
 }
 
 fieldset {
     border: none;
     margin-bottom: 15px;
     padding: 10px;
+}
+.data{
+    background-color: #fdfdfd;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 600px;
+    /*margin: auto;*/
 }
 
 :placeholder-shown{
@@ -26,6 +36,7 @@ fieldset {
 legend {
     font-weight: bold;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 label {
@@ -34,7 +45,7 @@ label {
 }
 
 input, textarea, select {
-    width: 100%;
+    width: 95%;
     padding: 8px;
     margin-top: 5px;
     border: 1px solid #131212;
@@ -47,9 +58,20 @@ input, textarea, select {
     align-items: center;
 
 }
+.checkbox-container{
+    display: flex;
+}
+.checkbox-title{
+    display: flex;
+    flex: 1;
+}
+.checkbox-item{
+    display: flex;
+    flex: 1;
+}
 
 button {
-    background: #28a745;
+    background: #237A57;
     color: white;
     border: none;
     padding: 10px;

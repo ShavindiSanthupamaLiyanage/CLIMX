@@ -14,7 +14,7 @@ h4 {
     text-align: center;
 }
 
-.banner-section, .volunteer-section, .table-section, .leaderboard-section, .impact-tracker, .share-section, .feedback-section, .stats-banner-section {
+.banner-section, .volunteer-section, .volunteer-table-section, .leaderboard-section, .impact-tracker, .share-section, .feedback-section, .stats-banner-section {
     margin: 20px;
     padding: 20px;
     background: white;
@@ -141,9 +141,7 @@ th, td {
 }
 
 th {
-    /*background-color: #4CAF50;*/
     background: linear-gradient(0deg, rgba(45, 253, 170, 1) 0%, rgba(21, 207, 138, 1) 0%, rgba(40, 143, 118, 1) 78%, rgba(36, 122, 87, 1) 100%);
-    /*background: linear-gradient(0deg,  rgba(36, 122, 87, 1)0%,  rgba(40, 143, 118, 1) 0%, rgba(21, 207, 138, 1)78%,  rgba(45, 253, 170, 1)100%);*/
 
     color: white;
 }

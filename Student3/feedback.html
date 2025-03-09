@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback Form</title>
-    <link rel="stylesheet" href="feedback.css">
-    <link rel="stylesheet" href="../styles/style.css">
-
+    <link rel="icon" type="image/png" href="../images/logo-icon.png">
+    <link rel="stylesheet" href="/Student3/feedback.css">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 
 <body>
@@ -14,9 +14,7 @@
     <div class="header-line"></div>
     <nav class="main-nav">
         <div class="logo">
-            <a href="../Student2/home.html"
-            ><img src="../images/logo.PNG" alt="Logo" class="logo-image"
-            /></a>
+            <a href="../Student2/home.html"><img src="/images/logo.PNG" alt="Logo" class="logo-image"></a>
         </div>
         <div class="main-menu">
             <ul>
@@ -32,9 +30,8 @@
     </nav>
 </header>
 <form id="feedback-form" action="#" method="post">
-<!--    <header class="feedback-header">Feedback Form</header>-->
     <h1>Feedback Form</h1>
-    <fieldset>
+    <fieldset class="data">
         <legend>Personal Details</legend>
         <label for="name">Full Name:</label>
         <input type="text" id="name" name="name" required title="Please enter a name" placeholder="Enter your name">
@@ -50,9 +47,10 @@
 
         <label for="address">Address:</label>
         <textarea id="address" name="address" rows="3" required title="" placeholder="Enter your Address"></textarea>
+        <span class="error" id="addressError">Please enter a valid address.</span>
     </fieldset>
 
-    <fieldset>
+    <fieldset class="data">
         <legend>Feedback Details</legend>
         <label for="message">Comment or Message:</label>
         <textarea id="message" name="message" rows="4" maxlength="500" oninput="updateCounter()" required></textarea>
@@ -66,13 +64,23 @@
         </select>
 
         <label>Preferred Contact Method:</label>
-        <input type="checkbox" name="contact_method" value="email"> Email
-        <input type="checkbox" name="contact_method" value="phone"> Phone
+        <div class="checkbox-container">
+            <div class="checkbox-title"><p>Email</p></div> <div class="checkbox-item"><input type="checkbox" name="contact_method" value="email" style="width: 15px"></div>
+        </div>
+        <div class="checkbox-container">
+            <div class="checkbox-title"><p>Phone</p></div><div class="checkbox-item"><input type="checkbox" name="contact_method" value="phone" style="width: 15px"></div>
+        </div>
 
         <label>How did you hear about us?</label>
-        <input type="radio" name="source" value="online"> Online
-        <input type="radio" name="source" value="friend"> Friend
-        <input type="radio" name="source" value="advertisement"> Advertisement
+        <div class="checkbox-container">
+            <div class="checkbox-title"><p>Online</p></div><div class="checkbox-item"><input type="radio" name="source" value="online" style="width: 15px"></div>
+        </div>
+        <div class="checkbox-container">
+            <div class="checkbox-title"><p>Friend</p></div> <div class="checkbox-item"><input type="radio" name="source" value="friend" style="width: 15px"> </div>
+        </div>
+        <div class="checkbox-container">
+            <div class="checkbox-title"><p>Advertisement</p> </div><div class="checkbox-item"><input type="radio" name="source" value="advertisement" style="width: 15px"> </div>
+        </div>
 
         <label for="feedback-date">Date of Experience:</label>
         <input type="datetime-local" id="feedback-date" name="feedback-date" required>
@@ -81,7 +89,7 @@
         <input type="file" id="attachment" name="attachment">
     </fieldset>
 
-    <fieldset>
+    <fieldset class="data">
         <legend>Rating</legend>
         <div class="rating">
             <span onclick="setRating(1)">⭐</span>
@@ -99,13 +107,13 @@
             <p>Thank you for your feedback! Data saved successfully.</p>
         </div>
     </div>
-
     <button type="submit">Submit</button>
 </form>
+<script src="/Student3/feedback.js"></script>
 <hr id="bottom-hr">
 <footer class="main-footer">
     <div class="main-footer-content">
-        <a href="../Student2/home.html"><img src="../images/logo.PNG" alt="Logo" class="logo-image"></a>
+        <a href="../Student2/home.html"><img src="/images/logo.PNG" alt="Logo" class="logo-image"></a>
         <p>"A Greener Future – Steps Toward Sustainability"</p>
 
         <div class="social-icons">
@@ -148,8 +156,12 @@
     </div>
 </footer>
 <div class="main-footer-bottom">
-    &copy; climx.com | Designed by Climx
+    &copy; CLIMX | All rights reserved
+    <div class="main-footer-bottom-link">
+        <span class="italic-text">Page edited by:</span>
+        <a href="pageEditor_ST3.html" class="italic-text">Benuri Palihakkara (View Editor Profile)</a>
+    </div>
 </div>
-<script src="feedback.js"></script>
+<script src="https://kit.fontawesome.com/1808a0d1bd.js" crossorigin="anonymous"></script>
 </body>
 </html>

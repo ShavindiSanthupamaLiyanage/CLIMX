@@ -1,3 +1,10 @@
+function setRating(value) {
+    let stars = document.querySelectorAll('.rating span');
+    stars.forEach((star, index) => {
+        star.classList.toggle('active', index < value);
+    });
+}
+
 document.getElementById('feedback-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form from submitting
 
@@ -25,3 +32,4 @@ document.getElementById('feedback-form').addEventListener('submit', function(eve
 function closeModal() {
     document.getElementById('successModal').style.display = 'none';
 }
+

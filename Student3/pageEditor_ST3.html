@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - 03</title>
+    <link rel="icon" type="image/png" href="../images/logo-icon.png">
+    <link rel="stylesheet" href="/styles/pageEditor_validator.css">
+    <link rel="stylesheet" href="/styles/style.css"><!-- External CSS link -->
+
+</head>
+<body>
+
+<!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+<header class="main-header">
+    <div class="header-line"></div>
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="../Student2/home.html"><img src="../images/logo.PNG" alt="Logo" class="logo-image"></a>
+        </div>
+        <div class="main-menu">
+            <ul>
+                <li><a href="../Student2/home.html">Home</a></li>
+                <li><a href="../Student1/volunteer.html">Volunteer</a></li>
+                <li><a href="../Student2/table.html">Tables</a></li>
+                <li><a href="../Student4/profile.html">User Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="../Student4/sitemap.html">Sitemap</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section class="stud">
+    <h2>P.A.Benuri Chathurya Palihakkara - Student 03</h2>
+</section>
+
+<div class="container">
+    <!-- Main content area -->
+    <main>
+        <!-- Update those first three sections for the pages you were responsible to implement -->
+        <section>
+            <h2 id="feedbackVal">Feedback Page</h2>
+            <h3>Technical Description</h3>
+            <h4>HTML Structure and Key Elements</h4>
+            <p>The form is built using semantic HTML for better usability, accessibility, and maintainability. It is wrapped in a <code>&lt;form&gt;</code> element with <code>method="post"</code> and <code>id="feedback-form"</code> for secure data submission and JavaScript handling. <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code> enhance organization and navigation. Various <code>&lt;input&gt;</code> types ensure correct data entry, with <code>required</code>, <code>placeholder</code>, and <code>title</code> attributes improving usability. A <code>&lt;textarea&gt;</code> allows multi-line feedback, while <code>&lt;select&gt;</code>, <code>&lt;input type="radio"&gt;</code>, and <code>&lt;input type="checkbox"&gt;</code> enable different selection options. A star-based rating system updates dynamically with JavaScript. A <code>&lt;div class="modal"&gt;</code> displays a success message upon submission, and a styled <code>&lt;button type="submit"&gt;</code> ensures responsive interaction with JavaScript validation.</p>
+
+            <h4>CSS Techniques for Styling and Layout</h4>
+            <p>Aesthetics enhance usability and engagement, with CSS ensuring a visually appealing and accessible design. The form is centered and limited in width for a balanced layout, with <code>max-width: 600px;</code>, <code>margin: auto;</code>, <code>padding: 20px 50px;</code>, and <code>border-radius: 8px;</code> for a modern look. Typography styles like <code>h1</code> and <code>label </code> improve readability. Input fields have <code>width: 95%;</code>, <code>padding: 8px;</code>, and <code>border-radius: 4px;</code> for ease of interaction. Buttons use <code>background: #237A57;</code>, <code>color: white;</code>, and <code>cursor: pointer;</code>, with a hover transition fo
+
+            <h4>JavaScript Enhancements</h4>
+            <p>JavaScript enhances the page by adding interactivity and validation. The rating system updates star visuals dynamically, while form validation ensures required fields are properly filled. The form submission handling prevents automatic submission, displaying a confirmation modal instead. Additionally, the modal close function allows users to dismiss the popup seamlessly.</p>
+
+            <h3>Accessibility</h3>
+            <p>
+                To ensure accessibility on the feedback form, I applied several best practices. For example, I used the <code>&lt;legend&gt;</code> tag within <code>&lt;fieldset&gt;</code> elements to provide clear titles for each section, making it easier for screen readers to identify different areas of the form. Additionally, the <code>required</code> attribute on input fields ensures that users don't miss essential information, and the <code>title</code> attribute gives extra guidance when hovering over fields. I also ensured that all interactive elements, such as buttons and rating stars, have proper focus states for keyboard navigation. For visual clarity, I used high contrast between text and background.
+            </p>
+
+            <p><a href="validation_ST3.html">
+                <button class="link-button">Go to Validation Page</button></a>
+            <a href="feedback.html"><button class="link-button">Go to Feedback Page</button></a>
+            </p>
+        </section>
+
+        <section>
+            <h2 id="teamVal">Team Page</h2>
+            <h3>Technical Description</h3>
+            <h4>HTML Structure and Key Elements</h4>
+            <p>
+                The HTML structure of the page is carefully crafted to provide clear content organization and ensure accessibility. Key tags such as <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;footer&gt;</code> establish a logical layout, with navigation links inside the <code>&lt;nav&gt;</code> for easy access to other parts of the website. Each team member’s profile is contained within a <code>&lt;div class="card"&gt;</code> structure, which is further divided into <code>&lt;div class="imbBx"&gt;</code> for the image and <code>&lt;div class="content"&gt;</code> for the descriptive text. The <code>&lt;img&gt;</code> tags are accompanied by <code>alt</code> attributes to improve accessibility for screen readers. Additionally, the use of semantic tags like <code>&lt;h3&gt;</code> and <code>&lt;h5&gt;</code> ensures that the information is well-structured and easy to read for both users and search engines.
+            </p>
+
+            <h4>CSS Techniques for Styling and Layout</h4>
+            <p>
+                CSS uses Flexbox for a responsive layout in the .card_Container, ensuring the design adjusts to different screen sizes. The position: relative and position: absolute properties control the content within the cards, while a hover effect is created with the transition property. A modern look is achieved with visual enhancements like backdrop-filter, box-shadow, and border-radius. Typography adjustments using text-transform, letter-spacing, and font-weight improve readability and highlight team member details. This combination of techniques creates an interactive and visually appealing layout.
+            </p>
+
+            <h3>Accessibility</h3>
+            <p>
+                To address accessibility in the team page, I utilized several best practices. The use of semantic HTML tags such as "h3" and "h5" ensures that the content is logically structured and easy to navigate for screen readers. Each team member's profile image is accompanied by an alt attribute to provide a text alternative for visually impaired users. The div elements are organized with appropriate class names like class="card" to ensure that content is grouped correctly. This structure, along with the use of clear headings and descriptive text, ensures that the page is accessible to all users.
+            </p>
+
+            <p><a href="validation_ST3.html"><button class="link-button">Go to Validation Page</button></a>
+                <a href="team.html"><button class="link-button">Go to Team Page</button></a>
+            </p>
+        </section>
+
+        <section>
+            <h2 id="contentVal">Content Page</h2>
+            <h3>Technical Description</h3>
+            <h4>HTML Structure and Key Elements</h4>
+            <p>
+                In this HTML implementation, I utilized a well-structured layout using <code>section</code>, <code>div</code>, and <code>img</code> tags to organize content and create a clear visual hierarchy. Each section, such as <code>#renewable</code>, <code>#community</code>, and <code>#agriculture</code>, is designed to highlight specific topics related to renewable energy and sustainable practices. Semantic elements like <code>h2</code>, <code>h3</code>, and <code>h4</code> provide structure and help search engines understand the content better. Alt attributes for <code>img</code> tags improve accessibility for screen readers. Additionally, <code>ul</code> and <code>li</code> tags are used to list key points, ensuring the information is organized and easy to read. The use of <code>class</code> and <code>id</code> attributes ensures efficient styling and functionality integration, enabling responsive layouts and interactive behaviors through CSS and JavaScript.
+            </p>
+            <h4>CSS Techniques for Styling and Layout</h4>
+            <p>
+                This CSS code defines the styling for a webpage that focuses on a clean, responsive design. The body of the page is set to use the Arial font, with a background color of #bee1c2, and the page has a fixed header with a green background (#4CAF50). The header and other elements such as cards and boxes are styled with various padding, margins, and box shadows to give them a modern, rounded appearance. For interactivity, buttons are provided with hover effects, and there’s a fixed "top button" that stays in place at the bottom right of the page. The layout employs flexbox to achieve a responsive design, ensuring that the page looks good on various screen sizes, while detailed content is displayed in modal-like boxes that appear centrally when triggered. Additionally, media elements, like images, are styled to maintain good proportions and clarity throughout the design.
+            </p>
+            <h4>JavaScript Enhancements</h4>
+            <p>
+                This JavaScript code is designed to enhance the interactivity and user experience of a webpage. The functions `openDetails` and `closeDetails` are used to control the visibility of modal-like detail boxes by modifying the `display` property of the corresponding elements. When a user clicks a navigation link, smooth scrolling is implemented with an offset to ensure proper alignment of the target section with the viewport. The code listens for the `DOMContentLoaded` event to initialize the navigation functionality. It highlights the active navigation link as the user scrolls through different sections of the page by comparing the scroll position with the section's position and height. The `highlightNav` function dynamically updates the class `active` on the navigation links to reflect the currently visible section. This is achieved by using `window.scrollY` to track the scroll position and comparing it with the section's offset and height.
+            </p>
+
+            <h3>Accessibility</h3>
+            <p>
+                This implementation prioritizes accessibility by using alt attributes for images, semantic HTML for easier navigation, and active navigation links to help users track their position. The responsive layout ensures accessibility across devices, while interactive elements like buttons have hover and focus effects for better usability. These measures provide an inclusive experience for all users.
+            </p>
+
+            <p><a href="validation_ST3.html">
+                <button class="link-button">Go to Validation Page</button></a>
+                <a href="content_STU3.html"><button class="link-button">Go to Content Page</button></a>
+            </p>
+        </section>
+
+        <section>
+            <h2 id="challenge"> Challenges and Lessons Learned</h2>
+            <ul>
+                <li>
+                    <p><strong>Challenge:</strong> Ensuring accessibility for visually impaired users and compatibility with screen readers.</p>
+                    <p><strong>Solution:</strong> Added descriptive alt text for images, used semantic HTML elements for structure, and ensured interactive elements like buttons had clear hover and focus effects.</p>
+                    <p><strong>Lesson Learned:</strong> Accessibility goes beyond alt text; it's about creating a seamless experience for all users. Testing with screen readers highlighted the importance of providing clear context and interaction cues.</p>
+                </li>
+                <li>
+                    <p><strong>Challenge:</strong> Ensuring smooth opening and closing of modals without disrupting page scrolling.</p>
+                    <p><strong>Solution:</strong> Controlled visibility through openDetails and closeDetails functions, added click detection outside the modal, and managed focus for accessibility.</p>
+                    <p><strong>Lesson Learned:</strong> The importance of thorough user interaction testing to ensure modals work seamlessly across different input methods.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 id="compliance"> Compliance</h2>
+            <p>The Janet network serves as a vital connection for educational and research institutions in the UK, upholding strict security protocols. We confirm that "CLIMX" adheres completely to the standards set by Janet. Group E has independently created the website, and both the name and logo are unique, with no external influences at all. To avoid any legal complications, we have carefully chosen all images from public domain sources, and we will provide proper attribution for all utilized content.</p>
+        </section>
+
+        <section>
+            <h2 id="ref">References</h2>
+            <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+            <ul class="ref">
+                <li>Sustanable Agriculture: <i>Sustanable Agriculture Practices </i> Available at: <a href="#">https://www.geeksforgeeks.org/sustainable-agriculture/</a> (Last accessed: 05 Mar 2025).</li>
+                <li>Sustanable Agriculthure: <i></i>Available at:<a href="#">https://greentumble.com/10-sustainable-farming-methods-and-practices</a> (Last accessed: 05 Mar 2025).</li>
+                <li>Community and Individual Activities: <i>Details</i>Available At: <a href="#">https://www.rwjf.org/en/insights/blog/2024/01/five-lessons-on-community-driven-climate-action.html</a>(Last accessed : 02 Mar 2025)</li>
+                <li>Solar Energy details Available at: <a href=""></a>https://www.energysage.com/about-clean-energy/solar/(Last accessed : 01 Mar 2025) </li>
+                <li>Wind Energy deatils Available at: <a href="">https://www.energy.gov.lk/en/renewable-energy/technologies/wind-power</a> (Last accessed : 01 Mar 2025)</li>
+                <li>Geothermal Energy details Available at: <a href="">https://www.britannica.com/science/geothermal-energy</a> (Last accessed : 01 Mar 2025) </li>
+                <li>Solar Energy details Available at: <a href=""> https://www.remoteenergy.org/blog/what-is-solar-energy?gad_source=1(Last accessed : 22 Feb 2025)</a></li>
+                <li>W3School form Element Details Available at: <a href=""> https://www.w3schools.com/html/html_form_elements.asp#gsc.tab=0&gsc.q=how%20can%20i%20added%20color%20radio%20button(Last accessed : 22 Feb 2025)</a></li>
+                <li>Reneable Energy details v: <a href="">https://www.un.org/en/climatechange/raising-ambition/renewable-energy</a> (Last accessed : 02 Mar 2025)</li>
+                <li>W3 School Style.css details Available at: <a href="">https://www.w3schools.com/html/html_css.asp</a> (Last accessed : 24 Feb 2025)</li>
+                <li>Climate Action details Available at: <a href="">https://www.w3schools.com/html/html_css.asp</a> (Last accessed : 01 Mar 2025)</li>
+                <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li>
+            </ul>
+        </section>
+
+        <p class="top"><a href="#top">Go top</a></p>
+    </main>
+
+    <!-- Sidebar area -->
+    <aside>
+        <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+        <ul class="top-level-ul">
+            <li>Student 3</li>
+            <ul>
+                <li><a href="#feedbackVal">Feedback page</a> </li>
+                <li><a href="#teamVal">Team page</a></li>
+                <li><a href="#contentVal">Content page</a></li>
+            </ul>
+            <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#ref">References</a></li>
+        </ul>
+    </aside>
+</div>
+
+<hr id="bottom-hr">
+<footer class="main-footer">
+    <div class="main-footer-content">
+        <a href="../Student2/home.html"><img src="/images/logo.PNG" alt="Logo" class="logo-image"></a>
+        <p>"A Greener Future – Steps Toward Sustainability"</p>
+
+        <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <div class="main-footer-content">
+        <ul>
+            <li><h4>Editors</h4></li>
+            <li>Shavindi Liyanage</li>
+            <li>Dilshan Kavinda</li>
+            <li>Benuri Palihakkara</li>
+            <li>Devindi Nimalrathna</li>
+        </ul>
+    </div>
+
+    <div class="main-footer-content">
+        <ul>
+            <li><h4>Editor Pages</h4></li>
+            <li><a href="../Student1/pageEditor_ST1.html">Student 1</a></li>
+            <li><a href="../Student2/pageEditor_ST2.html">Student 2</a></li>
+            <li><a href="pageEditor_ST3.html">Student 3</a></li>
+            <li><a href="../Student4/pageEditor_ST4.html">Student 4</a></li>
+        </ul>
+    </div>
+
+    <div class="main-footer-content">
+        <ul>
+            <li><h4>Validation Pages</h4></li>
+            <li><a href="../Student1/validation_ST1.html">Student 1</a></li>
+            <li><a href="../Student2/validation_ST2.html">Student 2</a></li>
+            <li><a href="validation_ST3.html">Student 3</a></li>
+            <li><a href="../Student4/validation_ST4.html">Student 4</a></li>
+        </ul>
+    </div>
+</footer>
+<div class="main-footer-bottom">
+    &copy; CLIMX | All rights reserved
+    <div class="main-footer-bottom-link">
+        <span class="italic-text">Page edited by:</span>
+        <a href="pageEditor_ST3.html" class="italic-text">Benuri Palihakkara (View Editor Profile)</a>
+    </div>
+</div>
+<script src="https://kit.fontawesome.com/1808a0d1bd.js" crossorigin="anonymous"></script>
+</body>
+</html>
