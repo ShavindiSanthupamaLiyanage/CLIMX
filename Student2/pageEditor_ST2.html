@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor Page Student - 02</title>
+    <link rel="icon" type="image/png" href="../images/logo-icon.png">
+
+    <link rel="stylesheet" href="../styles/pageEditor_validator.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+<header class="main-header">
+    <div class="header-line"></div>
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="../Student2/home.html">
+                <img src="../images/logo.PNG" alt="Logo" class="logo-image">
+            </a>
+        </div>
+        <div class="main-menu">
+            <ul>
+                <li><a href="../Student2/home.html">Home</a></li>
+                <li><a href="../Student1/volunteer.html" >Volunteer</a></li>
+                <li><a href="../Student2/table.html">Tables</a></li>
+                <li><a href="../Student4/profile.html">User Profile</a></li>
+                <li><a href="../Student3/feedback.html">Feedback</a></li>
+                <li><a href="../Student4/sitemap.html">Sitemap</a></li>
+                <li><a href="../Student3/team.html">Team</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<section class="stud">
+    <h2>Dilshan Kavinda - Student 02</h2>
+</section>
+
+<div class="container">
+    <!-- Main content area -->
+    <main>
+        <!-- Update those first three sections for the pages you were responsible to implement -->
+        <section>
+            <h2 id="home-page">Home Page</h2>
+            <p>The Home Page serves as the central introduction to your website and establishes its visual identity, navigation, and purpose.</p>
+            <h3>Technical Description</h3>
+            <h4>HTML Techniques Used</h4>
+            <ul>
+                <li><strong>Header & Navigation Bar</strong> <p>This section contains website logo and navigation menu.The main-nav class contains a list of links <code>ul with li</code>that help users navigate between different pages of the site, such as "Home," "Volunteer," "Tables," "User Profile," "Feedback," "Sitemap," and "Team".</p></li>
+                <li><strong>Hero Section</strong> <p>
+                    The hero section includes a video background with a muted autoplay feature. The video is embedded using the <code>&lt;video&gt;</code> element with a source tag pointing to the video file. The hero content is displayed over the video with the site title "CLIMX" and the tagline.</p></li>
+                </p></li>
+                <li><strong>Description Section</strong> <p>This section provides a brief overview of the website's purpose and mission.</p></li>
+                <li><strong>Sub-Content Section</strong> <p>Contains main 4 sub topics using <code>&lt;sub-content-section&gt;</code> with background images and text content. </p></li>
+
+                <li><strong>Footer Section</strong> <p>
+                    The footer contains the site logo, the  tagline and social media icons. It also includes sections for editors, editor pages, validation pages, and copyright information.</p></li>
+                </p></li>
+            </ul>
+
+            <h4>CSS Techniques</h4>
+            <ul>
+                <li><strong>Flexbox Layout</strong><p>
+                    use <code>&lt;display: flex &gt;</code>, <code>&lt;display: inline-block&gt;</code> to create flexible layouts.
+                </p></li>
+                <li><strong>Grid Layout</strong><p>
+                    grid layout is applied using <code>&lt;display: grid&gt;</code><code>&lt;grid-template-columns: repeat(auto-fit, minmax(250px, auto))&gt;</code>for footer.</p></li>
+
+                <li><strong>Text Effects and Typography</strong><p>
+                    Links have hover effects such as changing the background color, font weight, and color.</p></li>
+
+                <li><strong>Positioning and Z-Index</strong><p>
+                    <code>&lt;position: absolute,&gt;</code>
+                     allowing it to cover the entire hero section behind the content (z-index: -1 ensures it's behind the text).</p></li>
+
+            </ul>
+
+            <h3>Accessibility</h3>
+            <p>Ensuring accessibility on the Home page:</p>
+            <ul>
+                <li><strong>Alt Text</strong><p>
+                    All images include descriptive <code>alt</code> attributes.
+                </p></li>
+                <li><strong>Keyboard Navigation</strong><p>
+                    Interactive elements are focusable.
+                </p></li>
+            </ul>
+
+            <a href="../Student2/home.html" target="_blank">
+                <button class="link-button">Go to Home Page</button>
+            </a>
+
+            <a href="../Student2/validation_ST2.html#home-validation">
+                <button class="link-button">Go to Validation Page</button>
+            </a>
+
+            
+        </section>
+
+        <section>
+            <h2 id="content-page">Content Page</h2>
+            <p>This page describes how climate changes impact for public health, Types of Major health impacts and etc.</p>
+            <h3>Technical Description</h3>
+            <h4>HTML Techniques Used</h4>
+            <ul>
+                <li><strong>Semantic HTML Elements</strong> <p>Used <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code> for better document structure and accessibility.</p></li>
+                <li><strong>Sticky Navigation Bar</strong> <p>
+                    Implemented web page internal links using <code>&lt;a href="#id"&gt;</code> for smooth section navigation.</p></li>
+                </p></li>
+                <li><strong>Content Body Section</strong>       <p>Applied <code>&lt;div&gt;</code> elements with id to group text, images, and interactive components.</p></li>
+                <li><strong>Vulnerability Card Section</strong>  <p>Applied <code>&lt;div&gt;</code> elements with id to group text, images, and interactive components.</p></li>
+
+                <li><strong>Take Action Section</strong>  <p>Applied <code>&lt;div&gt;</code> elements to group text, images, buttons and interactive components.</p></li>
+
+                <li><strong>Footer Section</strong> <p>
+                    The footer contains the site logo, the  tagline and social media icons. It also includes sections for editors, editor pages, validation pages, and copyright information.</p></li>
+                </p></li>
+            </ul>
+
+            <h4>CSS Techniques</h4>
+            <ul>
+                <li><strong>Flexbox Layout</strong><p>
+                    use <code>&lt;display: flex &gt;</code>, <code>&lt;display: inline-block&gt;</code> to create flexible layouts.
+                </p></li>
+
+                <li><strong>Text Effects and Typography</strong><p>
+                    Links have hover effects such as changing the background color, font weight, and color.</p></li>
+
+                <li><strong>Positioning and Z-Index</strong><p>
+                    <code>&lt;position: absolute,&gt;</code>
+                     allowing it to cover the entire hero section behind the content (z-index: -1 ensures it's behind the text).</p></li>
+
+            </ul>
+
+            <h3>Accessibility</h3>
+            <p>Ensuring accessibility on the Content page:</p>
+            <ul>
+                <li><strong>Alt Text</strong><p>
+                    All images include descriptive <code>alt</code> attributes.
+                </p></li>
+                <li><strong>Keyboard Navigation</strong><p>
+                    Interactive elements are focusable.
+                </p></li>
+            </ul>
+
+            <a href="../Student2/content_STU2.html" target="_blank">
+                <button class="link-button">Go to Content Page</button>
+            </a>
+
+            <a href="../Student2/validation_ST2.html#content-validation">
+                <button class="link-button">Go to Validation Page</button>
+            </a>
+
+            
+        </section>
+
+        <section>
+            <h2 id="table-page">Tables Page</h2>
+            <p>This page represent the summary of the web site using tables.</p>
+            <h3>Technical Description</h3>
+            <h4>HTML Techniques Used</h4>
+            <ul>
+                <li><strong>Semantic HTML Elements</strong> <p>Used <code>&lt;section&gt;</code>, <code>&lt;table&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;tr&gt;</code> <code>&lt;td&gt;</code> with #id for better document structure and accessibility.</p></li>
+
+                <li><strong>Table Section</strong>       <p>Applied <code>&lt;table&gt;</code> elements with id to create tables and some <code>&lt;div&gt;</code> for describe the table content.</p></li>
+                <li><strong>Table Content</strong><p>Tables have different number of columns and rows with images and other data.</p></li>
+
+                <li><strong>Take Action Section</strong>  <p>Applied <code>&lt;div&gt;</code> elements to group text, images, buttons and interactive components.</p></li>
+            </ul>
+
+            <h4>CSS Techniques</h4>
+            <ul>
+                <li><strong>Flexbox Layout</strong><p>
+                    use <code>&lt;display: flex &gt;</code>, <code>&lt;display: inline-block&gt;</code> to create flexible layouts.
+                </p></li>
+
+                <li><strong>Text Effects and Typography</strong><p>
+                    Links have hover effects such as changing the background color, font weight, and color.</p></li>
+
+                <li><strong>Positioning and Z-Index</strong><p>
+                    <code>&lt;position: absolute,&gt;</code>
+                     allowing it to cover the entire hero section behind the content (z-index: -1 ensures it's behind the text).</p></li>
+
+                <li><strong>Table Borders and Rounded Corners</strong><p>
+                    Tables have <code>border-radius: 24px;</code> to create rounded corners and <code>&lt;td&gt;</code>have <code>border-bottom</code> and <code>border-right</code> styles for separation.</p></li>
+
+                <li><strong>Opacity and Transparency Effects</strong><p>
+                    <code>backdrop-filter: blur(5px); for blur the table background</code>
+                </p></li>
+
+                <li><strong>Background Images and Positioning</strong>
+                <p>
+                    Different sections have background images with <code>background-size: cover;</code> and <code>background-position: center;</code> for proper alignment.
+                </p></li>
+
+                <li><strong>Custom Row Highlighting</strong>
+                <p>
+                    Specific IDs are used to apply different background colors to highlight table rows based on importance.
+                </p></li>
+
+            </ul>
+
+            <h3>Accessibility</h3>
+            <p>Ensuring accessibility on the Content page:</p>
+            <ul>
+                <li><strong>Alt Text</strong><p>
+                    All images include descriptive <code>alt</code> attributes.
+                </p></li>
+                <li><strong>Keyboard Navigation</strong><p>
+                    Interactive elements are focusable.
+                </p></li>
+            </ul>
+
+            <a href="../Student2/table.html" target="_blank">
+                <button class="link-button">Go to Tables Page</button>
+            </a>
+
+            <a href="../Student2/validation_ST2.html#table-validation">
+                <button class="link-button">Go to Validation Page</button>
+            </a>
+
+            
+        </section>
+
+        <section>
+            <h2 id="challenge">Challenges and Lessons Learned</h2>
+            <h3>Challenges & Solutions</h3>
+            <ul>
+                <li><strong>Challenge:</strong> Ensuring the images load correctly across different div sizes.</li>
+                <li><strong>Solution:</strong> Used <code>background-size: cover;</code> and <code>background-position: center;</code> to align the images.</li>
+            
+                <li><strong>Challenge:</strong> Ensuring proper alignment of elements across screen sizes.</li>
+                <li><strong>Solution:</strong> Used <code>display: flex;</code> and media queries for layout responsiveness.</li>
+                
+                <li><strong>Challenge:</strong> Ensuring navigation remained fixed without overlapping content.</li>
+                <li><strong>Solution:</strong> Added <code>padding</code> property to prevent overlap of fixed navigation bar.</li>
+
+
+            </ul>
+            <h3>Lesson Learned</h3>
+            <ul>
+            <li>The importance of accessibility, ensuring all content is structured with appropriate heading levels.</li>
+            <li>Improved understanding of flexbox for layout design and positioning.</li>
+            <li>Enhanced knowledge of CSS properties for text effects and background styling.</li>
+            <li>Increased proficiency in using media queries for responsive design.</li>
+
+            </ul>
+        </section>
+
+        <section>
+            <h2 id="compliance">Compliance</h2>
+            <p>The Janet network is an essential link for the UK's educational and research institutions, maintaining
+                rigorous security standards. As the website supervisor, I assure you that "CLIMX" fully complies with
+                these Janet standards. Group E has independently developed the website, and both the name and logo are
+                original, with no external influences whatsoever. To prevent any legal issues, we have meticulously
+                selected all photographs from non-copyrighted sources, and we will ensure proper attribution for all
+                content used.
+            </p>
+        </section>
+
+        <section>
+            <h2 id="ref">References</h2>
+            <ul>
+            <li>
+                HTML Images, Links and Special Characters, CSS for Links, Images, CSS positioning (Week 03 Lecture notes) Available at:
+                <a href="https://learning.westminster.ac.uk/ultra/courses/_100151_1/outline/edit/document/_5174772_1?courseId=_100151_1&view=content&state=view" target="_blank" >
+                    <i>https://learning.westminster.ac.uk/ultra/courses/_100151_1/outline/edit/document/_5174772_1?courseId=_100151_1&view=content&state=view</i>
+                </a>
+                (Last accessed: 09 March 2025).
+            </li>
+            <li>
+                Freepick images Available at:
+                <a href="https://www.freepik.com/" target="_blank" >
+                    <i>https://www.freepik.com/</i>
+                </a>
+                (Last accessed: 09 March 2025).
+            </li>
+            <li>
+                iStock images Available at:
+                <a href="https://www.istockphoto.com/" target="_blank" >
+                    <i>https://www.istockphoto.com/</i>
+                </a>
+                (Last accessed: 08 March 2025).
+            </li>
+            <li>
+                Fontawesome icons Available at:
+                <a href="https://fontawesome.com/search?o=r&ic=free&s=solid&ip=classic" target="_blank" >
+                    <i>https://www.flaticon.com/</i>
+                </a>
+                (Last accessed: 08 March 2025).
+            </li>
+                <li>
+                    UN Sustainable Development Gaol 13 - Climate Action Available at:
+                    <a href="https://sdgs.un.org/goals/goal13" target="_blank" >
+                        <i>https://sdgs.un.org/goals/goal13</i>
+                    </a>
+                    (Last accessed: 09 March 2025).
+                </li>
+                <li>
+                    UNFCCC official website Available at:
+                    <a href="https://unfccc.int/" target="_blank" >
+                        <i>https://unfccc.int//</i>
+                    </a>
+                    (Last accessed: 09 March 2025).
+                </li>
+        </ul>
+        </section>
+
+        <p class="top"><a href="#top">Go top</a></p>
+    </main>
+
+    <!-- Sidebar area -->
+    <aside>
+        <h3>Core pages developed:</h3>
+        <ul class="top-level-ul">
+                <li><a href="#home-page">Home Page</a></li>
+                <li><a href="#content-page">Content Page</a></li>
+                <li><a href="#table-page">Table Page</a></li>
+
+            <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#ref">References</a></li>
+        </ul>
+    </aside>
+</div>
+
+<hr id="bottom-hr">
+<footer class="main-footer">
+        <div class="main-footer-content">
+            <a href="index.html"><img src="assests/images/logo.PNG" alt="Logo" class="logo-image"></a>
+            <p>A Greener Future – Steps Toward Sustainability.</p>
+
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+
+            </div>
+        </div>
+
+        <div class="main-footer-content">
+            <ul>
+                <li><h4>Editors</h4></li>
+                <li><a>Shavindi Liyanage</a></li>
+                <li><a >Dilshan Kavinda</a></li>
+                <li><a>Benuri Palihakkara</a></li>
+                <li><a>Devindi Nimalrathna</a></li>
+            </ul>
+        
+        </div>
+
+        <div class="main-footer-content">
+            <ul>
+                <li><h4>Editor Pages</h4></li>
+                <li><a href="../Student1/pageEditor_ST1.html">Student 1</a></li>
+                <li><a href="../Student2/pageEditor_ST2.html">Student 2</a></li>
+                <li><a href="../Student3/pageEditor_ST3.html">Student 3</a></li>
+                <li><a href="../Student4/pageEditor_ST4.html">Student 4</a></li>
+            </ul>
+        </div>
+
+    
+
+        <div class="main-footer-content">
+            <ul>
+                <li><h4>Validation Pages</h4></li>
+                <li><a href="../Student1/validation_ST1.html">Student 1</a></li>
+                <li><a href="../Student2/validation_ST2.html">Student 2</a></li>
+                <li><a href="../Student3/validation_ST3.html">Student 3</a></li>
+                <li><a href="../Student4/validation_ST4.html">Student 4</a></li>
+            </ul>
+        
+        </div>
+
+    </footer>
+    <div class="main-footer-bottom">
+        &copy; CLIMX | All rights reserved
+        <div class="main-footer-bottom-link">
+        <span class="italic-text">Page edited by:</span>
+        <a href="../Student2/pageEditor_ST2.html" class="italic-text">Dilshan Kavinda (View Editor Profile)</a>
+    </div>
+    
+    </div>
+<script src="https://kit.fontawesome.com/1808a0d1bd.js" crossorigin="anonymous"></script>
+</body>
+</html>

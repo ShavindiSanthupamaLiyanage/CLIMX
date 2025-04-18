@@ -1,10 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="ST2_style.css">
 
-</body>
+    <link rel="icon" type="image/png" href="../images/logo-icon.png">
+    <title>CLIMX</title>
+  </head>
+  <body>
+    
+    <header class="main-header">
+        <div class="header-line">
+        </div>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="home.html"><img src="../images/logo.PNG" alt="Logo" class="logo-image"></a>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li><a href="home.html" class="">Home</a></li>
+                    <li><a href="../Student1/volunteer.html">Volunteer</a></li>
+                    <li><a href="table.html">Tables</a></li>
+                    <li><a href="../Student4/profile.html">User Profile</a></li>
+                    <li><a href="../Student3/feedback.html">Feedback</a></li>
+                    <li><a href="../Student4/sitemap.html">Sitemap</a></li>
+                    <li><a href="../Student3/team.html">Team</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <header class="sub-header" id="sticky-header">
+      <nav class="sub-nav">
+        <ul>
+            <li><a href="#content-hero-section" >Introduction</a></li>
+            <li><a href="#major-health-impact">Major Health Impacts</a></li>
+            <li><a href="#small-p">Vulnerable Population Types</a></li>
+            <li><a href="#content5">Join with Us</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <main style="display: inline-block;" id="top">
+
+       
+
+      <div class="content-hero-section" id="content-hero-section">
+        <img
+          src="assests/images/image1.jpg"
+          alt="Banner"
+          class="banner-image"
+        >
+      </div>
+
+      <div class="introduction-section" id="introduction-section">
+        <div class="intro-left">
+          <h2>The Link Between Climate Change & Public Health</h2>
+          <p>
+            Climate change is not just an environmental issue, it is a serious
+            public health crisis. Rising global temperatures, extreme weather
+            events, air pollution, and shifting disease patterns are directly
+            affecting human health worldwide.
+          </p>
+        </div>
+        <div class="intro-right">
+          <div class="content-card">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <p>
+              The 2023 heatwaves in Europe led to over 61,000 deaths due to
+              extreme heat exposure.
+            </p>
+
+            <p>
+              Air pollution from wildfires in Canada spread toxic smoke across
+              the USA, worsening respiratory illnesses like asthma.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="image" id="major-health-impact">
+        <img
+          src="assests/images/image2.png"
+          alt="Image"
+          class="content-body-image"
+        >
+      </div>
+      <!-- impact section -->
+      <div class="content-body">
+        <h2>Major Health Impacts of Climate Change</h2>
+
+        <div class="content-container" id="container1">
+          <div class="left-container">
+            <img
+              src="assests/images/image3.jpg"
+              alt="Hot climate"
+              class="container-image"
+            >
+          </div>
+          <div class="right-container">
+            <h3>Extreme Heat & Heat-Related Illnesses</h3>
+            <div class="details">
+              <div class="content-card">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <p class="small-p">
+                  Rising temperatures lead to heat exhaustion, dehydration, and
+                  heat strokes.
+                </p>
+                <p class="small-p">
+                  Vulnerable populations, such as the elderly and outdoor
+                  workers, are at higher risk.
+                </p>
+              </div>
+              <div class="content-card">
+                <i
+                  class="fa-solid fa-triangle-exclamation"
+                ></i>
+                <p class="small-p">
+                  In 2023, Europe recorded its hottest summer, causing 61,000
+                  heat-related deaths.
+                </p>
+
+                <p class="small-p">
+                  In 2022, India recorded temperatures above 45°C, causing over
+                  90,000 cases of heat-related illnesses.
+                </p>
+              </div>
+              <div class="content-card">
+                <i class="fa-solid fa-circle-check"></i>
+                <p class="small-p">Cooling centers in urban areas.</p>
+
+                <p class="small-p">
+                  Green spaces and tree planting to reduce heat effects.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-container" id="container2">
+          <div class="left-container">
+            <img
+              src="assests/images/image4.jpg"
+              alt="Hot climate"
+              class="container-image"
+            >
+          </div>
+          <div class="right-container">
+            <h3>Air Pollution & Respiratory Diseases</h3>
+            <div class="details">
+              <div class="content-card">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <p class="small-p">
+                  Burning fossil fuels releases harmful gases, leading to air
+                  pollution-related diseases.
+                </p>
+                <p class="small-p">
+                  Asthma, lung cancer, and cardiovascular diseases are rising
+                  due to polluted air.
+                </p>
+              </div>
+              <div class="content-card">
+                <i
+                  class="fa-solid fa-triangle-exclamation"
+                ></i>
+                <p class="small-p">
+                  Studies show that air pollution causes 7 million deaths
+                  annually, according to the WHO.
+                </p>
+
+                <p class="small-p">
+                  Wildfire smoke in Canada (2023) caused a major air quality
+                  crisis in the US, increasing asthma-related hospital visits by
+                  30%.
+                </p>
+              </div>
+              <div class="content-card">
+                <i class="fa-solid fa-circle-check"></i>
+                <p class="small-p">
+                  Transition to renewable energy sources like wind and solar
+                  power to reduce air pollution.
+                </p>
+
+                <p class="small-p">Enforce stricter air pollution regulations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-container" id="container3">
+          <div class="left-container">
+            <img
+              src="assests/images/image5.jpg"
+              alt="Hot climate"
+              class="container-image"
+            >
+          </div>
+          <div class="right-container">
+            <h3>Vector-Borne Diseases (Malaria, Dengue, Zika)</h3>
+            <div class="details">
+              <div class="content-card">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <p class="small-p">
+                  Rising temperatures and humidity create the perfect conditions
+                  for mosquitoes to thrive.
+                </p>
+                <p class="small-p">
+                  Malaria and dengue cases are increasing in regions where they
+                  were previously uncommon.
+                </p>
+              </div>
+              <div class="content-card">
+                <i
+                  class="fa-solid fa-triangle-exclamation"
+                ></i>
+                <p class="small-p">
+                  Severe droughts in Africa have put 20 million people at risk
+                  of starvation.
+                </p>
+              </div>
+              <div class="content-card">
+                <i class="fa-solid fa-circle-check"></i>
+                <p class="small-p">Invest in mosquito control programs.</p>
+
+                <p class="small-p">Improve disease surveillance systems.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-container" id="container4">
+          <div class="left-container">
+            <img
+              src="assests/images/image6.jpg"
+              alt="Hot climate"
+              class="container-image"
+            >
+          </div>
+          <div class="right-container">
+            <h3>Water and Food Insecurity</h3>
+            <div class="details">
+              <div class="content-card">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <p class="small-p">
+                  Climate change disrupts agriculture and drinking water
+                  sources, leading to malnutrition and foodborne illnesses.
+                </p>
+              </div>
+              <div class="content-card">
+                <i
+                  class="fa-solid fa-triangle-exclamation"
+                ></i>
+                <p class="small-p">
+                  Severe droughts in Africa have put 20 million people at risk
+                  of starvation.
+                </p>
+              </div>
+              <div class="content-card">
+                <i class="fa-solid fa-circle-check"></i>
+                <p class="small-p">Promote climate-smart farming.</p>
+
+                <p class="small-p" id="small-p">Increase water conservation efforts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <!-- Vulnerable Population section -->
+      <div class="introduction-section">
+        <div class="intro-left">
+          <h2>Vulnerable Populations at Higher Risk</h2>
+          <p>
+            While climate change affects everyone, certain vulnerable
+            populations are disproportionately impacted due to age, health
+            conditions, socio-economic status, and geographic location. These
+            groups face higher exposure to environmental risks and have fewer
+            resources to cope with climate-related disasters.
+          </p>
+        </div>
+        <div class="intro-right">
+          <div class="content-card">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <p>
+              Hurricane Maria (2017) in Puerto Rico led to over 3,000 deaths,
+              mainly among the elderly and people in poverty.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="image">
+        <img
+          src="assests/images/image8.png"
+          alt="Image"
+          class="content-body-image">
+      </div>
+
+      <div class="vulnerability-cards-section">
+        <div class="content-card">
+          <div class="content-card-heading">
+            <i class="fa-solid fa-baby"></i>
+            <h4>
+              Children – Higher Risk of Respiratory Illnesses and Malnutrition
+            </h4>
+          </div>
+          <p class="content-card-p">
+            Children are especially vulnerable to climate change due to their
+            developing immune systems and higher exposure to pollutants. They
+            breathe more air relative to their body size, making them more
+            susceptible to air pollution-related diseases like asthma. In
+            heavily polluted areas like Delhi, India, asthma rates among
+            children have increased by 50% over the past two decades due to
+            vehicle emissions and industrial pollution. Additionally,
+            climate-induced droughts in Africa and South Asia have led to food
+            shortages, increasing child malnutrition and causing long-term
+            developmental issues. To protect children, governments need to
+            implement stricter air pollution control policies and improve
+            nutrition programs in high-risk areas.
+          </p>
+        </div>
+        <div class="content-card">
+          <div class="content-card-heading">
+            <i class="fa-solid fa-person-cane"></i>
+            <h4>
+              Elderly – More Vulnerable to Heat Stress and Cardiovascular Diseases
+            </h4>
+          </div>
+          <p class="content-card-p">
+            The elderly are at greater risk during climate-related events, particularly heatwaves and natural disasters. Aging bodies have a reduced ability to regulate temperature, making extreme heat deadly. Chronic conditions such as heart disease and diabetes can worsen in extreme temperatures, and many elderly individuals live alone with limited access to emergency services. A severe heatwave in France (2003) caused over 14,000 deaths, primarily among older individuals who lacked air conditioning. Similarly, during Hurricane Katrina (2005, USA), over 70% of fatalities were among people aged 60 or older who couldn’t evacuate in time. To mitigate these risks, cities must establish cooling centers, provide better emergency evacuation plans, and ensure vulnerable seniors receive the necessary support.
+          </p>
+        </div>
+      </div>
+
+      <div class="vulnerability-cards-section">
+        <div class="content-card">
+          <div class="content-card-heading">
+            <i class="fa-solid fa-house-circle-exclamation"></i>
+            <h4>
+              Low-Income Communities – Less Access to Healthcare and Safe Living Conditions
+            </h4>
+          </div>
+          <p class="content-card-p">
+            Low-income communities are disproportionately affected by climate change due to poor living conditions and limited access to healthcare. Many live in flood-prone or heat-vulnerable areas without the financial resources to relocate or rebuild after disasters. For example, during Hurricane Harvey (2017, USA), low-income neighborhoods in Houston suffered the most damage, as many residents couldn’t afford to repair their homes. Similarly, in Dhaka, Bangladesh, annual flooding displaces thousands, forcing families to live in unsanitary conditions that increase disease risks. To address these challenges, governments must improve disaster preparedness in low-income areas and invest in affordable healthcare and housing solutions.
+          </p>
+        </div>
+        <div class="content-card">
+          <div class="content-card-heading">
+            <i class="fa-solid fa-city"></i>
+            <h4>
+              Developing Countries – Lack of Resources to Manage Climate Disasters
+            </h4>
+          </div>
+          <p class="content-card-p" id="content-card-p">
+            Developing nations face some of the most severe consequences of climate change due to weaker healthcare systems, limited economic resources, and dependence on agriculture. Without proper disaster response and recovery efforts, these countries struggle to manage climate-related crises. In Mozambique (2019), Cyclone Idai became one of the deadliest storms in Africa, killing more than 1,300 people and leaving millions without clean water. Similarly, Pakistan’s 2022 monsoon floods affected 33 million people, triggering a health crisis with outbreaks of cholera and malaria. To prevent further devastation, wealthier nations must provide climate funding, while developing countries need to invest in early warning systems and infrastructure to mitigate disaster impacts.
+          </p>
+        </div>
+      </div>
+
+      <!-- take action section -->
+       <div class="sub-content" id="content5">
+            <div class="content-background">
+                <h2>Take Action Now!</h2>
+                <p>Every small effort counts in combating climate change and protecting public health.</p>
+                <a href="../Student1/volunteer.html" class="btn">Join the Movement</a>
+            </div>
+
+        </div>
+
+        <div class="gototop">
+            <a href="#top" class="gototop-btn">Go to Top</a>
+        </div>
+
+        <hr id="bottom-hr">
+
+    <footer class="main-footer">
+        <div class="main-footer-content">
+            <a href="index.html"><img src="assests/images/logo.PNG" alt="Logo" class="logo-image"></a>
+            <p>A Greener Future – Steps Toward Sustainability.</p>
+
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+
+            </div>
+        </div>
+
+        <div class="main-footer-content">
+            <ul>
+                <li><h4>Editors</h4></li>
+                <li><a>Shavindi Liyanage</a></li>
+                <li><a >Dilshan Kavinda</a></li>
+                <li><a>Benuri Palihakkara</a></li>
+                <li><a>Devindi Nimalrathna</a></li>
+            </ul>
+        
+        </div>
+
+        <div class="main-footer-content">
+            <ul>
+                <li><h4>Editor Pages</h4></li>
+                <li><a href="../Student1/pageEditor_ST1.html">Student 1</a></li>
+                <li><a href="../Student2/pageEditor_ST2.html">Student 2</a></li>
+                <li><a href="../Student3/pageEditor_ST3.html">Student 3</a></li>
+                <li><a href="../Student4/pageEditor_ST4.html">Student 4</a></li>
+            </ul>
+        </div>
+
+    
+
+        <div class="main-footer-content">
+            <ul>
+                <li><h4>Validation Pages</h4></li>
+                <li><a href="../Student1/validation_ST1.html">Student 1</a></li>
+                <li><a href="../Student2/validation_ST2.html">Student 2</a></li>
+                <li><a href="../Student3/validation_ST3.html">Student 3</a></li>
+                <li><a href="../Student4/validation_ST4.html">Student 4</a></li>
+            </ul>
+        
+        </div>
+
+    </footer>
+    <div class="main-footer-bottom">
+        &copy; CLIMX | All rights reserved
+        <div class="main-footer-bottom-link">
+        <span class="italic-text">Page edited by:</span>
+        <a href="../Student2/pageEditor_ST2.html" class="italic-text">Dilshan Kavinda (View Editor Profile)</a>
+    </div>
+    
+    </div>
+
+
+
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/1808a0d1bd.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
